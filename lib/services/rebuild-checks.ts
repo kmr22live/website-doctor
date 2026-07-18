@@ -10,19 +10,8 @@ import { extractedPageSchema } from "@/lib/types/extracted";
 import type { PersistedPage } from "@/lib/services/pipeline";
 import type { FetchedPage } from "@/lib/services/fetcher";
 
-export const CATEGORY_TO_SCORE: Record<string, ScoreCategory> = {
-  SEO: "seo",
-  Accessibility: "accessibility",
-  Performance: "performance",
-  UX: "ux",
-  Conversion: "conversion",
-  Security: "best-practices",
-  "Code quality": "best-practices",
-  Content: "seo",
-  Forms: "conversion",
-  Tracking: "conversion",
-  Navigation: "seo",
-};
+export { CATEGORY_TO_SCORE } from "@/lib/score-map";
+import { CATEGORY_TO_SCORE } from "@/lib/score-map";
 
 /** Best-effort scoreCategory for a stored check id (analyzer rules are dynamic). */
 export function scoreCategoryFor(checkId: string, defCategory: string | undefined, globRule?: Rule): ScoreCategory {

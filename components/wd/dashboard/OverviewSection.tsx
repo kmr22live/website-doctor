@@ -2,6 +2,7 @@
 
 import { MIcon } from "@/components/wd/MaterialIcon";
 import { FONT_MONO, SEV, SEV_ORDER, SCORE_CARD_META, healthMeta, scoreColor, scoreGlow, type SeverityKey } from "@/lib/ui/theme";
+import { CATEGORY_TO_SCORE } from "@/lib/score-map";
 import type { SiteReport } from "@/lib/services/report";
 
 const STAGE_LABELS: Record<string, string> = {
@@ -95,9 +96,11 @@ export function OverviewSection({
   const catBars = [...issuesByCat.entries()].sort((a, b) => b[1] - a[1]);
   const maxCat = Math.max(1, ...catBars.map(([, n]) => n));
 
+  // Count issues by the SAME mapping the scoring engine uses (e.g. "Security"
+  // and "Code quality" issues deduct from Best practices) — the sub-label must
+  // agree with the deduction.
   const issueCountByScoreCat = (key: string) => {
-    const label = SCORE_CARD_META.find((m) => m.key === key)?.label ?? key;
-    const n = issuesByCat.get(label) ?? 0;
+    const n = issues.filter((i) => (CATEGORY_TO_SCORE[i.category] ?? "best-practices") === key).length;
     return n === 1 ? "1 issue found" : `${n} issues found`;
   };
 
