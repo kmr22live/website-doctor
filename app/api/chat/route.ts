@@ -72,7 +72,7 @@ export async function POST(req: Request) {
   } catch (e) {
     logger.warn({ err: String(e) }, "chat failed");
     return NextResponse.json(
-      { error: "The AI assistant is unavailable — check the AI provider configuration (GEMINI_API_KEY)." },
+      { error: `The AI assistant is unavailable — the "${config.ai.provider}" provider needs its API key (AI_API_KEY or GEMINI_API_KEY) in the server environment.` },
       { status: 503 },
     );
   }
