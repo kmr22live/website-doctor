@@ -146,12 +146,15 @@ export class OpenAICompatProvider implements AIProvider {
               logger.warn({ provider: this.name, model, next: chain[chain.indexOf(model) + 1] ?? "none" }, "daily quota exhausted — switching model");
               break;
             }
-            // Per-minute limit: wait ONCE, then give up on this call (the check
-            // shows "not run" with a re-run button — honest and quick).
-            if (waitedForRateLimit) break;
+            // Per-minute limit: wait ONCE; if still limited, hop to the next
+            // model in the chain — each model has its own per-minute pool.
+            if (waitedForRateLimit) {
+              logger.warn({ provider: this.name, model, next: chain[chain.indexOf(model) + 1] ?? "none" }, "still rate limited — trying next model");
+              break;
+            }
             waitedForRateLimit = true;
             logger.warn({ provider: this.name, model, waitMs: e.retryAfterMs }, "rate limited — waiting before retry");
-            await sleep(e.retryAfterMs);
+            await sleep(Math.min(e.retryAfterMs, 30_000));
             continue;
           }
           // Non-429 failure: some models reject response_format — drop it and retry once.
@@ -159,8 +162,8 @@ export class OpenAICompatProvider implements AIProvider {
           logger.warn({ attempt, provider: this.name, model, err: String(e).slice(0, 300) }, "openai-compat call failed");
         }
       }
-      // Move to next model only for daily-quota breaks; other exhausted attempts stop here.
-      if (!(lastErr instanceof RateLimitError && lastErr.daily)) break;
+      // Hop to the next model on any rate-limit break; stop on other errors.
+      if (!(lastErr instanceof RateLimitError)) break;
     }
     throw new AIProviderError(
       `${this.name} ${opts.schemaName} call failed: ${String(lastErr).slice(0, 300)}`,

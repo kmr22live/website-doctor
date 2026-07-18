@@ -71,9 +71,12 @@ export async function POST(req: Request) {
     return NextResponse.json(result);
   } catch (e) {
     logger.warn({ err: String(e) }, "chat failed");
-    return NextResponse.json(
-      { error: `The AI assistant is unavailable — the "${config.ai.provider}" provider needs its API key (AI_API_KEY or GEMINI_API_KEY) in the server environment.` },
-      { status: 503 },
-    );
+    const msg = String(e);
+    const error = /429|rate.?limit/i.test(msg)
+      ? "The AI assistant is briefly rate-limited on the free tier — ask again in a minute."
+      : /API_KEY|not set/i.test(msg)
+        ? `The AI assistant is unavailable — the "${config.ai.provider}" provider needs its API key (AI_API_KEY or GEMINI_API_KEY) in the server environment.`
+        : "The AI assistant hit an unexpected error — try again shortly.";
+    return NextResponse.json({ error }, { status: 503 });
   }
 }
