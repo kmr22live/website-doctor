@@ -8,29 +8,34 @@
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; background: #07090F; color: #E7ECF4; font-family: 'Space Grotesk', sans-serif; }
-  .slide { width: 1280px; height: 720px; padding: 70px 90px; position: relative; overflow: hidden; page-break-after: always; display: flex; flex-direction: column; }
+  .slide { width: 1280px; height: 720px; padding: 64px 90px; position: relative; overflow: hidden; page-break-after: always; display: flex; flex-direction: column; }
   .slide::before { content: ""; position: absolute; inset: 0; pointer-events: none;
     background: radial-gradient(700px 400px at 10% -10%, rgba(167,139,250,0.16), transparent 60%), radial-gradient(900px 500px at 95% 115%, rgba(45,212,191,0.13), transparent 60%); }
   .slide::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.4;
     background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 44px 44px; }
   .kicker { font-size: 13px; letter-spacing: 3px; font-weight: 700; color: #5EEAD4; text-transform: uppercase; }
-  h1 { font-size: 64px; font-weight: 700; letter-spacing: -2px; line-height: 1.06; margin: 18px 0 0; }
-  h2 { font-size: 40px; font-weight: 700; letter-spacing: -1px; margin: 14px 0 0; }
+  h1 { font-size: 62px; font-weight: 700; letter-spacing: -2px; line-height: 1.06; margin: 18px 0 0; }
+  h2 { font-size: 38px; font-weight: 700; letter-spacing: -1px; margin: 12px 0 0; }
   .grad { background: linear-gradient(100deg, #2DD4BF 10%, #60A5FA 55%, #A78BFA 95%); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .sub { font-size: 19px; color: rgba(231,236,244,0.65); line-height: 1.65; max-width: 900px; }
+  .sub { font-size: 19px; color: rgba(231,236,244,0.65); line-height: 1.65; max-width: 920px; }
   .mono { font-family: 'JetBrains Mono', monospace; }
-  .panel { background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 18px; padding: 22px 26px; position: relative; }
-  .foot { position: absolute; bottom: 28px; left: 90px; right: 90px; display: flex; justify-content: space-between; font-size: 12px; color: rgba(231,236,244,0.35); z-index: 2; }
+  .panel { background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; padding: 20px 24px; position: relative; }
+  .foot { position: absolute; bottom: 26px; left: 90px; right: 90px; display: flex; justify-content: space-between; font-size: 12px; color: rgba(231,236,244,0.35); z-index: 2; }
   .logo { width: 46px; height: 46px; border-radius: 13px; background: linear-gradient(135deg, #2DD4BF, #3B82F6); display: inline-flex; align-items: center; justify-content: center; font-size: 26px; }
   .chip { display: inline-block; border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 700; }
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
   .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
-  .num { font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; }
+  .num { font-family: 'JetBrains Mono', monospace; font-size: 38px; font-weight: 700; }
   ul.clean { margin: 10px 0 0; padding: 0 0 0 2px; list-style: none; }
   ul.clean li { font-size: 16.5px; color: rgba(231,236,244,0.78); line-height: 1.5; padding: 7px 0; display: flex; gap: 12px; align-items: flex-start; }
   ul.clean li::before { content: "✓"; color: #5EEAD4; font-weight: 700; flex-shrink: 0; }
   .z { position: relative; z-index: 2; }
   img.shot { border-radius: 14px; border: 1px solid rgba(255,255,255,0.12); max-width: 100%; }
+  .stepnum { width: 34px; height: 34px; border-radius: 999px; background: linear-gradient(135deg, #2DD4BF, #3B82F6); color: #04110D; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .painrow { display: grid; grid-template-columns: 1fr 44px 1fr; gap: 0; align-items: stretch; margin-top: 14px; }
+  .pain { background: rgba(251,113,133,0.06); border: 1px solid rgba(251,113,133,0.25); border-radius: 14px; padding: 16px 20px; }
+  .cure { background: rgba(45,212,191,0.06); border: 1px solid rgba(94,234,212,0.25); border-radius: 14px; padding: 16px 20px; }
+  .arrow { display: flex; align-items: center; justify-content: center; color: #5EEAD4; font-size: 22px; font-weight: 700; }
 </style>
 </head>
 <body>
@@ -45,135 +50,164 @@
     diagnosis: real crawling, 60+ automated checks, Lighthouse, axe-core, security probes, and AI-written
     fixes tied to the exact broken elements.</p>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">01 / 07</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">01 / 08</span></div>
 </div>
 
-<!-- SLIDE 2 — Problem -->
+<!-- SLIDE 2 — The real pain -->
 <div class="slide">
   <div class="z">
-    <div class="kicker">The problem</div>
-    <h2>Every website is silently broken.<br>Nobody can afford to find out how.</h2>
-    <div class="grid3" style="margin-top:44px;">
-      <div class="panel"><div class="num" style="color:#FB7185;">$500+</div>
-        <p class="sub" style="font-size:16px; margin:8px 0 0;">what an agency charges for a one-off site audit — most small businesses never buy one</p></div>
-      <div class="panel"><div class="num" style="color:#FBBF24;">days</div>
-        <p class="sub" style="font-size:16px; margin:8px 0 0;">from audit to a report — and it's a PDF of findings, not fixes a developer can paste</p></div>
-      <div class="panel"><div class="num" style="color:#38BDF8;">7%</div>
-        <p class="sub" style="font-size:16px; margin:8px 0 0;">conversions lost per extra second of load time — broken sites bleed money invisibly</p></div>
+    <div class="kicker">The real pain</div>
+    <h2>Your website is losing money right now —<br>and you have no way to know.</h2>
+    <div class="grid3" style="margin-top:32px;">
+      <div class="panel"><div class="num" style="color:#FB7185;">Invisible</div>
+        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">A missing security header, an unlabeled booking form, a 4&nbsp;MB hero image — none of it shows on the surface. The owner sees a "working" site; visitors bounce, screen-reader users give up, Google ranks it down.</p></div>
+      <div class="panel"><div class="num" style="color:#FBBF24;">Expensive</div>
+        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">A professional audit costs $300–$1000, takes days, and arrives as a PDF of jargon. For 200M+ small-business sites, that math never works — so audits simply don't happen.</p></div>
+      <div class="panel"><div class="num" style="color:#38BDF8;">Unactionable</div>
+        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">Free checkers scan one page, print generic advice ("optimize your images"), hide their failures, and never tell a developer WHICH element to change or WHAT code to paste.</p></div>
     </div>
-    <p class="sub" style="margin-top:38px;">Free checkers exist — and they're shallow: one page, no context, generic advice,
-    and results you can't trust because failures are silently hidden.</p>
+    <p class="sub" style="margin-top:34px;"><b style="color:#E7ECF4;">The gap:</b> nothing between a $0 toy and a $1000 consultant —
+    no tool that finds real problems, proves them with evidence, and hands over the exact fix.</p>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">02 / 07</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">02 / 08</span></div>
 </div>
 
-<!-- SLIDE 3 — Product -->
+<!-- SLIDE 3 — Pain → Solution -->
+<div class="slide">
+  <div class="z">
+    <div class="kicker">How Website Doctor solves it</div>
+    <h2>Every pain point, answered directly.</h2>
+    <div class="painrow">
+      <div class="pain"><b style="color:#FDA4AF;">😖 "Audits cost $1000 and take days"</b>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">Out of reach for the businesses that need them most.</p></div>
+      <div class="arrow">→</div>
+      <div class="cure"><b style="color:#5EEAD4;">Paste a URL. Minutes later: full diagnosis.</b>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">Real crawl of up to 10 pages, 60+ checks, Lighthouse, axe-core, security + TLS — automatically, for the cost of a coffee's worth of compute.</p></div>
+    </div>
+    <div class="painrow">
+      <div class="pain"><b style="color:#FDA4AF;">😖 "Reports tell me WHAT's wrong, never HOW to fix it"</b>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">Findings without fixes just create anxiety.</p></div>
+      <div class="arrow">→</div>
+      <div class="cure"><b style="color:#5EEAD4;">Every issue ships its fix — with the broken element attached.</b>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">Business impact in plain language, AI-written paste-in code, and the actual HTML of the offending element with its selector. Search, paste, done.</p></div>
+    </div>
+    <div class="painrow">
+      <div class="pain"><b style="color:#FDA4AF;">😖 "Free checkers can't be trusted"</b>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">Silent failures dressed up as green ticks.</p></div>
+      <div class="arrow">→</div>
+      <div class="cure"><b style="color:#5EEAD4;">Honesty is enforced by the database.</b>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">Every failed check = exactly one issue, counts reconcile everywhere; anything that couldn't run says so in orange with a one-click re-run. Never a fake pass.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">03 / 08</span></div>
+</div>
+
+<!-- SLIDE 4 — How it works, step by step -->
+<div class="slide">
+  <div class="z">
+    <div class="kicker">How it works</div>
+    <h2>From URL to fixed website — six steps.</h2>
+    <div class="grid3" style="margin-top:26px;">
+      <div class="panel" style="padding:16px 20px;"><div style="display:flex; gap:12px; align-items:center;"><span class="stepnum">1</span><b>Paste a URL</b></div>
+        <p class="sub" style="font-size:14px; margin:10px 0 0;">One input. No setup, no snippet to install, no account gymnastics.</p></div>
+      <div class="panel" style="padding:16px 20px;"><div style="display:flex; gap:12px; align-items:center;"><span class="stepnum">2</span><b>Real crawl</b></div>
+        <p class="sub" style="font-size:14px; margin:10px 0 0;">Headless Chromium visits up to 10 pages — real navigation, screenshots, full HTML, response headers. Live progress streams to the screen.</p></div>
+      <div class="panel" style="padding:16px 20px;"><div style="display:flex; gap:12px; align-items:center;"><span class="stepnum">3</span><b>Deep audits</b></div>
+        <p class="sub" style="font-size:14px; margin:10px 0 0;">60+ rule checks + Lighthouse (LCP/CLS/TBT) + axe-core accessibility + security headers, TLS cert, broken links — per page.</p></div>
+      <div class="panel" style="padding:16px 20px;"><div style="display:flex; gap:12px; align-items:center;"><span class="stepnum">4</span><b>AI review</b></div>
+        <p class="sub" style="font-size:14px; margin:10px 0 0;">The model reviews each screenshot like a senior designer, audits the markup, checks cross-page consistency, and writes an executive summary.</p></div>
+      <div class="panel" style="padding:16px 20px;"><div style="display:flex; gap:12px; align-items:center;"><span class="stepnum">5</span><b>Issues → fixes</b></div>
+        <p class="sub" style="font-size:14px; margin:10px 0 0;">Every failed check becomes one prioritized issue: impact, paste-in code, and the exact broken elements captured from the page.</p></div>
+      <div class="panel" style="padding:16px 20px;"><div style="display:flex; gap:12px; align-items:center;"><span class="stepnum">6</span><b>Act & verify</b></div>
+        <p class="sub" style="font-size:14px; margin:10px 0 0;">Mark resolved, re-run single checks to confirm fixes, ask the AI assistant anything about the findings, export the PDF for the client.</p></div>
+    </div>
+    <p class="sub" style="margin-top:26px; font-size:15px;"><span class="mono" style="color:#5EEAD4;">crawl → audit → AI → issues → fixes → verify</span> — a full quality loop, not a one-shot report.</p>
+  </div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">04 / 08</span></div>
+</div>
+
+<!-- SLIDE 5 — Product -->
 <div class="slide">
   <div class="z">
     <div class="kicker">The product</div>
     <h2>One URL in. A complete diagnosis out.</h2>
-    <div style="margin-top:26px; display:flex; gap:24px; align-items:flex-start;">
+    <div style="margin-top:24px; display:flex; gap:24px; align-items:flex-start;">
       <img class="shot" src="screenshots/dashboard.png" style="width:660px;">
       <ul class="clean" style="flex:1;">
-        <li>Real 15-stage pipeline: crawl → audits → AI review → fixes</li>
         <li>Health score + 6 category scores, severity-weighted</li>
-        <li>Every issue: evidence, business impact, copy-paste fix code</li>
+        <li>Issues with evidence, impact, and copy-paste fix code</li>
         <li>The actual broken HTML elements, captured from the page</li>
-        <li>Live scan progress over SSE with a real telemetry log</li>
+        <li>Live 15-stage scan progress with real telemetry</li>
+        <li>Check registry: 393 checks, honest statuses, 1-click re-run</li>
         <li>PDF export + site-aware AI chat</li>
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">03 / 07</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">05 / 08</span></div>
 </div>
 
-<!-- SLIDE 4 — AI fluency -->
+<!-- SLIDE 6 — AI fluency -->
 <div class="slide">
   <div class="z">
     <div class="kicker">AI fluency</div>
     <h2>AI is the engine, not a wrapper.</h2>
-    <div class="grid2" style="margin-top:36px;">
+    <div class="grid2" style="margin-top:32px;">
       <div class="panel"><b style="color:#5EEAD4;">👁 Vision review</b>
-        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">The model reviews every page's real screenshot like a senior designer — CTA contrast, hierarchy, trust signals — findings become issues with the same 1:1 rigor as automated checks.</p></div>
+        <p class="sub" style="font-size:15px; margin:8px 0 0;">Reviews every page's real screenshot like a senior designer — CTA contrast, hierarchy, trust signals — findings join the issue pipeline with full 1:1 rigor.</p></div>
       <div class="panel"><b style="color:#60A5FA;">🔍 Markup review</b>
-        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">Reads real extracted DOM data and catches what rules can't: weak titles, mismatched schema, suspicious link text — grounded, never invented.</p></div>
+        <p class="sub" style="font-size:15px; margin:8px 0 0;">Reads real extracted DOM data and catches what static rules can't: weak titles, mismatched schema, suspicious anchors — grounded, never invented.</p></div>
       <div class="panel"><b style="color:#A78BFA;">🛠 Fix generator</b>
-        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">Writes the fix card for each issue using the actual offending element's HTML — page-specific code your developer pastes in, not generic advice.</p></div>
-      <div class="panel"><b style="color:#F472B6;">💬 Grounded chat</b>
-        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">Answers strictly from the stored analysis — real scores, real issue names — and refuses out-of-scope questions. Provider-agnostic: Groq, Gemini, any OpenAI-compatible endpoint, zod-validated JSON everywhere.</p></div>
+        <p class="sub" style="font-size:15px; margin:8px 0 0;">Writes each fix card from the actual offending element's HTML — page-specific paste-in code, not generic advice.</p></div>
+      <div class="panel"><b style="color:#F472B6;">💬 Grounded chat + resilience</b>
+        <p class="sub" style="font-size:15px; margin:8px 0 0;">Chat answers strictly from stored analysis and refuses the rest. Provider-agnostic (Groq/Gemini/any OpenAI-compatible), zod-validated JSON, and <b>self-healing model fallback</b> when free-tier quotas run dry.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">04 / 07</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">06 / 08</span></div>
 </div>
 
-<!-- SLIDE 5 — Differentiator -->
+<!-- SLIDE 7 — Honesty differentiator -->
 <div class="slide">
   <div class="z">
     <div class="kicker">Why it's different</div>
     <h2>The honest scanner.</h2>
-    <div style="margin-top:30px; display:flex; gap:24px;">
+    <div style="margin-top:28px; display:flex; gap:24px;">
       <img class="shot" src="screenshots/registry.png" style="width:640px;">
       <div style="flex:1;">
         <ul class="clean">
-          <li><b>1:1 invariant, DB-enforced</b> — every failed check = exactly one issue, same severity; counts reconcile in every view</li>
-          <li><b>No silent failures</b> — a check that couldn't run shows orange "Not run — error" with the real reason. Never a fake pass, never a fake 0/100</li>
-          <li><b>One-click re-run</b> — any check or analyzer, offline from stored artifacts where possible</li>
+          <li><b>1:1 invariant, DB-enforced</b> — failed checks = issues, same severity, counts reconcile in every view</li>
+          <li><b>No silent failures</b> — "Not run — error" rows with the real reason. Never a fake pass, never a fake 0/100</li>
+          <li><b>One-click re-run</b> — per check or per analyzer, offline from stored artifacts where possible</li>
           <li><b>Resolved marks survive re-runs</b> — the tool respects your triage</li>
         </ul>
-        <p class="sub" style="font-size:15px; margin-top:18px;">Trust is the product. If users can't trust the numbers, an audit tool is decoration.</p>
+        <p class="sub" style="font-size:15px; margin-top:16px;">Trust is the product. If users can't trust the numbers, an audit tool is decoration.</p>
       </div>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">05 / 07</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">07 / 08</span></div>
 </div>
 
-<!-- SLIDE 6 — Market -->
+<!-- SLIDE 8 — Market + next + close -->
 <div class="slide">
   <div class="z">
-    <div class="kicker">Market & model</div>
+    <div class="kicker">Market & what's next</div>
     <h2>Every website is a customer.</h2>
-    <div class="grid3" style="margin-top:40px;">
+    <div class="grid3" style="margin-top:28px;">
       <div class="panel"><div class="num grad">200M+</div>
-        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">active websites worldwide — SMBs, agencies, freelancers who can't afford recurring audits</p></div>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">active sites; wedge = agencies turning "trust us" into branded, evidence-backed reports with fixes</p></div>
       <div class="panel"><div class="num grad">Freemium</div>
-        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">free single scans → paid: scheduled monitoring, multi-site dashboards, white-label PDF reports for agencies</p></div>
-      <div class="panel"><div class="num grad">API-first</div>
-        <p class="sub" style="font-size:15.5px; margin:8px 0 0;">the scan engine is already an API — CI checks on every deploy, agency bulk scans, embeddable badges</p></div>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">free scans → paid monitoring, multi-site dashboards, white-label PDFs</p></div>
+      <div class="panel"><div class="num grad">Next</div>
+        <p class="sub" style="font-size:14.5px; margin:6px 0 0;">scheduled re-scans + regression alerts · auto-fix pull requests · CI gate that fails deploys when health regresses</p></div>
     </div>
-    <p class="sub" style="margin-top:36px;"><b style="color:#E7ECF4;">Wedge:</b> agencies. One tool that turns "trust us, your site has issues"
-    into a branded, evidence-backed report with fixes — in the time it takes to make coffee.</p>
-  </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">06 / 07</span></div>
-</div>
-
-<!-- SLIDE 7 — What's next -->
-<div class="slide">
-  <div class="z">
-    <div class="kicker">What's next</div>
-    <h2>From diagnosis to continuous care.</h2>
-    <div class="grid2" style="margin-top:36px;">
-      <div class="panel"><b style="color:#5EEAD4;">Now → 3 months</b>
-        <ul class="clean" style="font-size:15px;">
-          <li>Scheduled re-scans + regression alerts ("your health dropped 12 points")</li>
-          <li>Full 331-check industry catalog (62 live today, honestly labeled)</li>
-          <li>Search Console integration — real traffic × real issues</li>
-        </ul></div>
-      <div class="panel"><b style="color:#A78BFA;">3 → 12 months</b>
-        <ul class="clean" style="font-size:15px;">
-          <li>Auto-fix PRs: the fix generator opens the pull request</li>
-          <li>Agency workspaces, white-label reports, client portals</li>
-          <li>CI gate: fail the deploy if health regresses</li>
-        </ul></div>
-    </div>
-    <div style="margin-top:44px; display:flex; align-items:center; gap:18px;">
+    <div style="margin-top:46px; display:flex; align-items:center; gap:18px;">
       <span class="logo">🩺</span>
       <div>
-        <div style="font-size:22px; font-weight:700;">Website Doctor</div>
-        <div class="mono" style="font-size:13px; color:rgba(231,236,244,0.5);">live demo · public repo · built with AI in 4 days</div>
+        <div style="font-size:24px; font-weight:700;">Website Doctor</div>
+        <div class="mono" style="font-size:13px; color:rgba(231,236,244,0.5);">live demo · github.com/kmr22live/website-doctor · built with AI in 4 days</div>
       </div>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">07 / 07</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">08 / 08</span></div>
 </div>
 
 </body>
