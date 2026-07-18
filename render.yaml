@@ -25,3 +25,5 @@ services:
         value: "10"
       - key: LIGHTHOUSE_MAX_PAGES
         value: "3"
+      - key: SEED_URLS
+        value: https://example.com,https://namastedev.com

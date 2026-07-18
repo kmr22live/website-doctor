@@ -12,8 +12,11 @@ The scanner runs Playwright + Lighthouse, which **do not work on serverless**
 5. Click **Apply**. First build takes ~8-10 min (Docker image with Chromium).
 6. Your public URL appears as `https://website-doctor-XXXX.onrender.com`.
 
-After deploy, open the URL and **run one scan** (e.g. your own site) so judges land
-on a filled dashboard, then keep that tab's link as the submission URL.
+**No manual scan needed:** on every fresh deploy the instance seeds itself —
+it runs REAL scans of the `SEED_URLS` demo sites (default: example.com +
+namastedev.com) as soon as it boots, so judges always land on filled
+dashboards, even after the ephemeral disk is wiped. Set `SEED_URLS=` (empty)
+to disable, or point it at different sites.
 
 ### Free-plan notes
 - 512 MB RAM is tight for Lighthouse. `LIGHTHOUSE_MAX_PAGES=3` is preset; if scans
