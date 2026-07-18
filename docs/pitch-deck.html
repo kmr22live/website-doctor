@@ -5,6 +5,7 @@
 <title>Website Doctor — Pitch Deck</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; background: #07090F; color: #E7ECF4; font-family: 'Space Grotesk', sans-serif; }
@@ -21,7 +22,8 @@
   .mono { font-family: 'JetBrains Mono', monospace; }
   .panel { background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; padding: 20px 24px; position: relative; }
   .foot { position: absolute; bottom: 26px; left: 90px; right: 90px; display: flex; justify-content: space-between; font-size: 12px; color: rgba(231,236,244,0.35); z-index: 2; }
-  .logo { width: 46px; height: 46px; border-radius: 13px; background: linear-gradient(135deg, #2DD4BF, #3B82F6); display: inline-flex; align-items: center; justify-content: center; font-size: 26px; }
+  .logo { width: 46px; height: 46px; border-radius: 13px; background: linear-gradient(135deg, #2DD4BF, #3B82F6); display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 6px 22px rgba(45,212,191,0.35); }
+  .logo .material-icons { font-family: 'Material Icons'; font-size: 27px; color: #04110D; line-height: 1; }
   .chip { display: inline-block; border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 700; }
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
   .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
@@ -43,7 +45,7 @@
 <!-- SLIDE 1 — Title -->
 <div class="slide" style="justify-content:center; align-items:flex-start;">
   <div class="z">
-    <span class="logo">🩺</span>
+    <span class="logo"><span class="material-icons">medical_services</span></span>
     <div class="kicker" style="margin-top:26px;">OpenAI Codex Hackathon 2026 · Developer Tools</div>
     <h1>Website Doctor<br><span class="grad">Your website, diagnosed in minutes.</span></h1>
     <p class="sub" style="margin-top:24px;">An AI-powered website QC platform. Paste a URL — get a full health
@@ -200,7 +202,7 @@
         <p class="sub" style="font-size:14.5px; margin:6px 0 0;">scheduled re-scans + regression alerts · auto-fix pull requests · CI gate that fails deploys when health regresses</p></div>
     </div>
     <div style="margin-top:46px; display:flex; align-items:center; gap:18px;">
-      <span class="logo">🩺</span>
+      <span class="logo"><span class="material-icons">medical_services</span></span>
       <div>
         <div style="font-size:24px; font-weight:700;">Website Doctor</div>
         <div class="mono" style="font-size:13px; color:rgba(231,236,244,0.5);">live demo · github.com/kmr22live/website-doctor · built with AI in 4 days</div>
