@@ -1,0 +1,60 @@
+import type { ExtractedPage } from "@/lib/types/extracted";
+
+/** A healthy page fixture — rules should pass against this. */
+export function healthyPage(overrides: Partial<ExtractedPage> = {}): ExtractedPage {
+  return {
+    url: "https://example.com/",
+    finalUrl: "https://example.com/",
+    statusCode: 200,
+    title: "Example Domain — a perfectly reasonable title",
+    titleCount: 1,
+    metaDescription:
+      "A well-sized meta description that says what this page is about and why you would click it in a search result.",
+    metaDescriptionCount: 1,
+    canonical: "https://example.com/",
+    canonicalCount: 1,
+    robotsMeta: "index, follow",
+    viewport: "width=device-width, initial-scale=1",
+    viewportCount: 1,
+    charset: "utf-8",
+    htmlLang: "en",
+    favicon: "/favicon.ico",
+    appleTouchIcon: "/apple-touch-icon.png",
+    headings: [
+      { level: 1, text: "Main heading" },
+      { level: 2, text: "Sub heading" },
+    ],
+    images: [{ src: "https://example.com/a.jpg", alt: "A photo", width: "800", height: "600", loading: "lazy" }],
+    links: [
+      { href: "/about", text: "About", rel: null, target: null, isInternal: true },
+      { href: "https://other.example", text: "Elsewhere", rel: "noopener", target: "_blank", isInternal: false },
+    ],
+    forms: [],
+    buttons: ["Search"],
+    scripts: [{ src: "https://example.com/app.js", async: false, defer: true, type: null }],
+    schemaTypes: ["WebSite"],
+    ogTags: { "og:title": "T", "og:description": "D", "og:image": "https://example.com/og.jpg" },
+    twitterTags: { "twitter:card": "summary_large_image" },
+    inlineEventHandlerCount: 0,
+    inlineStyleCount: 0,
+    deprecatedTags: [],
+    hasGa4: true,
+    hasGtm: false,
+    hasFbPixel: false,
+    wordCount: 400,
+    htmlBytes: 20_000,
+    hasDoctype: true,
+    mixedContentUrls: [],
+    textSample: "Regular readable content about the topic of this page.",
+    samples: {
+      missingAlt: [],
+      badLinks: [],
+      inlineHandlers: [],
+      inlineStyles: [],
+      deprecatedTags: [],
+      unlabeledInputs: [],
+      blockingScripts: [],
+    },
+    ...overrides,
+  };
+}

@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+/* ---- Website Doctor dark theme (design contract: design/Website-Doctor-prototype.html) ---- */
+:root {
+  --bg: #07090f;
+  --panel: rgba(255, 255, 255, 0.035);
+  --panel-border: rgba(255, 255, 255, 0.09);
+  --accent-from: #2dd4bf;
+  --accent-to: #3b82f6;
+  --sev-critical: #fb7185;
+  --sev-high: #fb7185;
+  --sev-medium: #fbbf24;
+  --sev-low: #38bdf8;
+  --sev-notice: #94a3b8;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel-border: var(--panel-border);
+  --color-accent-from: var(--accent-from);
+  --color-accent-to: var(--accent-to);
+  --color-critical: var(--sev-critical);
+  --color-high: var(--sev-high);
+  --color-medium: var(--sev-medium);
+  --color-low: var(--sev-low);
+  --color-notice: var(--sev-notice);
+  --color-primary-text: var(--text-primary);
+  --color-secondary-text: var(--text-secondary);
+  --color-muted-text: var(--text-muted);
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --radius-panel: 18px;
+  --radius-panel-sm: 16px;
+  --radius-panel-lg: 20px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Reusable panel surface */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-panel);
+}
+
+.accent-gradient {
+  background-image: linear-gradient(90deg, var(--accent-from), var(--accent-to));
+}
+
+.accent-text {
+  background-image: linear-gradient(90deg, var(--accent-from), var(--accent-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Material Icons (loaded in layout) */
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Keyframes from the design contract */
+@keyframes wdspin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes wdfade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes wdslide {
+  from { opacity: 0; transform: translateX(48px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes wdblink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+@keyframes wdpulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(45, 212, 191, 0); }
+}
+@keyframes wdmarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes wdglow {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+a { color: #5eead4; }
+::selection { background: rgba(45, 212, 191, 0.3); }
+select option { background: #0d1220; color: #e7ecf4; }
+
+/* Prototype responsive breakpoints (attribute-driven, matching the design contract) */
+@media (max-width: 1280px) {
+  [data-wd-hero] { grid-template-columns: 1fr 1fr !important; }
+  [data-wd-scores] { grid-template-columns: repeat(3, 1fr) !important; }
+  [data-wd-bottom] { grid-template-columns: 1fr !important; }
+  [data-wd-pages] { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 1180px) {
+  [data-wd-issuerow] { grid-template-columns: 92px minmax(0, 1fr) 96px 32px !important; }
+  [data-wd-hidecol] { display: none !important; }
+}
+@media (max-width: 1040px) {
+  [data-wd-analyze] { grid-template-columns: 1fr !important; }
+  [data-wd-hero] { grid-template-columns: 1fr !important; }
+  [data-wd-scores] { grid-template-columns: repeat(2, 1fr) !important; }
+  [data-wd-pages] { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 920px) {
+  [data-wd-shell] { flex-direction: column !important; }
+  [data-wd-sidebar] { width: 100% !important; flex-direction: row !important; align-items: center !important; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
+  [data-wd-logo] { border-bottom: none !important; padding: 12px 14px !important; flex-shrink: 0; }
+  [data-wd-logo] > div + div > div + div { display: none; }
+  [data-wd-nav] { flex-direction: row !important; overflow-x: auto; padding: 10px 12px !important; flex: 1; gap: 6px !important; }
+  [data-wd-nav] > div { flex-shrink: 0; }
+  [data-wd-sidefoot] { display: none !important; }
+  [data-wd-topbar] { height: auto !important; flex-wrap: wrap !important; padding: 12px 16px !important; row-gap: 10px !important; }
+  [data-wd-content] { padding: 16px !important; }
+  [data-wd-health] { flex-wrap: wrap !important; }
+  [data-wd-drawer] { width: auto !important; left: 12px !important; }
+  [data-wd-h1] { font-size: 38px !important; letter-spacing: -1px !important; }
+  [data-wd-urlbar] { flex-wrap: wrap !important; border-radius: 28px !important; padding: 10px 14px !important; }
+  [data-wd-urlbar] > button { width: 100%; justify-content: center; }
+  [data-wd-steps] { grid-template-columns: 1fr 1fr !important; }
+  [data-wd-stats] { grid-template-columns: 1fr 1fr !important; }
+  [data-wd-scanhead] { flex-wrap: wrap !important; row-gap: 12px !important; }
+  [data-wd-search] { width: 100% !important; }
+}
+@media (max-width: 620px) {
+  [data-wd-issuerow] { grid-template-columns: 84px minmax(0, 1fr) 28px !important; }
+  [data-wd-hidecol2] { display: none !important; }
+  [data-wd-scores] { grid-template-columns: 1fr 1fr !important; }
+  [data-wd-steps] { grid-template-columns: 1fr !important; }
+}
+
+/* Small screens: the floating back button would overlap the brand logo — put it in flow. */
+@media (max-width: 920px) {
+  [data-wd-backbtn] { position: static !important; margin: 16px auto 0 !important; }
+}
+
+/* Thin scrollbars like the prototype */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
+}

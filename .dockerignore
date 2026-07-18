@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+data
+*.db
+*.db-journal
+.env
+.env.local
+design/Website-Doctor-prototype.html
+overnight.sh
+STATUS.txt
+docs/screenshots

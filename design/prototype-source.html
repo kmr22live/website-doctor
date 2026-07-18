@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="abc5ed2c-f035-479a-b40f-78f203b1198b"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <style>/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("8ae2702f-f386-4ff4-ae44-8566747bdd7a") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("98dff743-7fa3-4a4e-b32e-9c3f0f4568b6") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b59e9736-d500-4dd2-acf5-3283173de223") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("3b08ab6a-f6e4-4d62-9ba1-9313ee5caf14") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("befd17cc-5cf7-4c7f-872a-79cb0b36daa0") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b4ef76e6-6ef7-4bd1-b503-7b9fa67b0249") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("8ae2702f-f386-4ff4-ae44-8566747bdd7a") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("98dff743-7fa3-4a4e-b32e-9c3f0f4568b6") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b59e9736-d500-4dd2-acf5-3283173de223") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("3b08ab6a-f6e4-4d62-9ba1-9313ee5caf14") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("befd17cc-5cf7-4c7f-872a-79cb0b36daa0") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b4ef76e6-6ef7-4bd1-b503-7b9fa67b0249") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("8ae2702f-f386-4ff4-ae44-8566747bdd7a") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("98dff743-7fa3-4a4e-b32e-9c3f0f4568b6") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("b59e9736-d500-4dd2-acf5-3283173de223") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("3b08ab6a-f6e4-4d62-9ba1-9313ee5caf14") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("befd17cc-5cf7-4c7f-872a-79cb0b36daa0") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("b4ef76e6-6ef7-4bd1-b503-7b9fa67b0249") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b3e63da7-b3cb-4ac1-85ff-e7ce5a127aca") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c8f93bc8-1f65-4c5b-a8e4-47aced36c469") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fd2add90-fecd-4124-ae04-1a1dd0923527") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b3e63da7-b3cb-4ac1-85ff-e7ce5a127aca") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c8f93bc8-1f65-4c5b-a8e4-47aced36c469") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fd2add90-fecd-4124-ae04-1a1dd0923527") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b3e63da7-b3cb-4ac1-85ff-e7ce5a127aca") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c8f93bc8-1f65-4c5b-a8e4-47aced36c469") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fd2add90-fecd-4124-ae04-1a1dd0923527") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("b3e63da7-b3cb-4ac1-85ff-e7ce5a127aca") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c8f93bc8-1f65-4c5b-a8e4-47aced36c469") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fd2add90-fecd-4124-ae04-1a1dd0923527") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+  <style>/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("c0396a26-3388-49b0-92ef-2f0695c26835") format('woff2');
+}
+/* fallback */
+@font-face {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url("09d9187f-a086-4a73-8760-3a7cc8cad74d") format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+  <style>
+    .material-icons, .material-icons-outlined { font-family: 'Material Icons'; font-weight: normal; font-style: normal; display: inline-block; line-height: 1; letter-spacing: normal; text-transform: none; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-smoothing: antialiased; }
+    .material-icons-outlined { font-family: 'Material Icons Outlined'; }
+  </style>
+  <style>
+    html, body { margin: 0; padding: 0; background: #07090F; }
+    a { color: #5EEAD4; text-decoration: none; }
+    a:hover { color: #99F6E4; text-decoration: underline; }
+    ::selection { background: rgba(45,212,191,0.3); }
+    @keyframes wdspin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes wdfade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes wdslide { from { opacity: 0; transform: translateX(48px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes wdblink { 0%, 100% { opacity: 0.2; } 50% { opacity: 1; } }
+    @keyframes wdpulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(45,212,191,0.4); } 50% { box-shadow: 0 0 0 8px rgba(45,212,191,0); } }
+    @keyframes wdmarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes wdglow { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
+    select option { background: #0D1220; color: #E7ECF4; }
+    @media (max-width: 1280px) {
+      [data-wd-hero] { grid-template-columns: 1fr 1fr !important; }
+      [data-wd-scores] { grid-template-columns: repeat(3, 1fr) !important; }
+      [data-wd-bottom] { grid-template-columns: 1fr !important; }
+      [data-wd-pages] { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+    @media (max-width: 1180px) {
+      [data-wd-issuerow] { grid-template-columns: 92px minmax(0, 1fr) 96px 32px !important; }
+      [data-wd-hidecol] { display: none !important; }
+    }
+    @media (max-width: 1040px) {
+      [data-wd-analyze] { grid-template-columns: 1fr !important; }
+      [data-wd-hero] { grid-template-columns: 1fr !important; }
+      [data-wd-scores] { grid-template-columns: repeat(2, 1fr) !important; }
+      [data-wd-pages] { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 920px) {
+      [data-wd-shell] { flex-direction: column !important; }
+      [data-wd-sidebar] { width: 100% !important; flex-direction: row !important; align-items: center !important; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
+      [data-wd-logo] { border-bottom: none !important; padding: 12px 14px !important; flex-shrink: 0; }
+      [data-wd-logo] > div + div > div + div { display: none; }
+      [data-wd-nav] { flex-direction: row !important; overflow-x: auto; padding: 10px 12px !important; flex: 1; gap: 6px !important; }
+      [data-wd-nav] > div { flex-shrink: 0; }
+      [data-wd-sidefoot] { display: none !important; }
+      [data-wd-topbar] { height: auto !important; flex-wrap: wrap !important; padding: 12px 16px !important; row-gap: 10px !important; }
+      [data-wd-content] { padding: 16px !important; }
+      [data-wd-health] { flex-wrap: wrap !important; }
+      [data-wd-drawer] { width: auto !important; left: 12px !important; }
+      [data-wd-h1] { font-size: 38px !important; letter-spacing: -1px !important; }
+      [data-wd-urlbar] { flex-wrap: wrap !important; border-radius: 28px !important; padding: 10px 14px !important; }
+      [data-wd-urlbar] > button { width: 100%; justify-content: center; }
+      [data-wd-steps] { grid-template-columns: 1fr 1fr !important; }
+      [data-wd-stats] { grid-template-columns: 1fr 1fr !important; }
+      [data-wd-scanhead] { flex-wrap: wrap !important; row-gap: 12px !important; }
+      [data-wd-search] { width: 100% !important; }
+    }
+    @media (max-width: 620px) {
+      [data-wd-issuerow] { grid-template-columns: 84px minmax(0, 1fr) 28px !important; }
+      [data-wd-hidecol2] { display: none !important; }
+      [data-wd-scores] { grid-template-columns: 1fr 1fr !important; }
+      [data-wd-steps] { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</helmet>
+<div style="min-height: 100vh; background: #07090F; font-family: 'Space Grotesk', sans-serif; color: #E7ECF4; font-size: 14px; position: relative;">
+  <div style="position: fixed; inset: 0; pointer-events: none; background: radial-gradient(900px 520px at 12% -8%, rgba(167,139,250,0.18), transparent 62%), radial-gradient(1100px 640px at 92% 112%, rgba(45,212,191,0.14), transparent 60%), radial-gradient(700px 400px at 55% 50%, rgba(59,130,246,0.07), transparent 65%);"></div>
+  <div style="position: fixed; inset: 0; pointer-events: none; opacity: 0.5; background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px); background-size: 44px 44px;"></div>
+
+  <!-- ============ START ============ -->
+  <sc-if value="{{ isStart }}" hint-placeholder-val="{{ true }}">
+    <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; box-sizing: border-box; position: relative;">
+      <button sc-camel-on-click="{{ goProjects }}" style="position: absolute; top: 20px; left: 24px; z-index: 2; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.03); color: rgba(231,236,244,0.7); border-radius: 999px; padding: 8px 16px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px;" style-hover="border-color: rgba(94,234,212,0.4); color: #5EEAD4;">
+        <span class="material-icons" style="font-size: 16px;">arrow_back</span>All projects
+      </button>
+      <div style="flex: 1; width: 100%; max-width: 860px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px 24px; box-sizing: border-box; animation: wdfade 0.5s ease;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(94,234,212,0.25); background: rgba(45,212,191,0.08); border-radius: 999px; padding: 6px 16px; font-size: 12px; letter-spacing: 2.5px; font-weight: 600; color: #5EEAD4;">
+          <span style="width: 7px; height: 7px; border-radius: 50%; background: #2DD4BF; animation: wdblink 1.6s infinite;"></span>
+          AI-POWERED WEBSITE QA
+        </div>
+        <h1 data-wd-h1="1" style="font-size: 64px; font-weight: 700; letter-spacing: -2px; line-height: 1.05; margin: 28px 0 0; text-align: center;">Your website,<br><span style="background: linear-gradient(100deg, #2DD4BF 10%, #60A5FA 55%, #A78BFA 95%); -webkit-background-clip: text; background-clip: text; color: transparent;">diagnosed in 90 seconds.</span></h1>
+        <p style="margin: 20px 0 0; color: rgba(231,236,244,0.6); font-size: 17px; line-height: 1.6; text-align: center; max-width: 540px; text-wrap: pretty;">We crawl every page, run all 331 gold-standard QC checks — crawl, SEO, code, accessibility, security, speed — and let AI review each screen like a senior designer — then hand you fixes you can paste in.</p>
+        <div data-wd-urlbar="1" style="display: flex; gap: 10px; width: 100%; max-width: 680px; margin-top: 40px; padding: 8px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; backdrop-filter: blur(12px); box-shadow: 0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06); align-items: center;">
+          <span class="material-icons-outlined" style="color: rgba(231,236,244,0.4); font-size: 22px; margin-left: 16px;">language</span>
+          <input value="{{ url }}" sc-camel-on-change="{{ onUrl }}" sc-camel-on-key-down="{{ onUrlKey }}" placeholder="https://yourwebsite.com" style="flex: 1; border: none; outline: none; font-family: 'Space Grotesk', sans-serif; font-size: 17px; padding: 12px 0; background: transparent; color: #E7ECF4; min-width: 0;">
+          <button sc-camel-on-click="{{ onAnalyze }}" style="border: none; cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #04110D; background: linear-gradient(120deg, #2DD4BF, #3B82F6); border-radius: 999px; padding: 14px 30px; display: flex; align-items: center; gap: 8px; box-shadow: 0 8px 28px rgba(45,212,191,0.3); transition: filter 0.2s ease, transform 0.2s ease;" style-hover="filter: brightness(1.12);">
+            <span class="material-icons" style="font-size: 19px;">troubleshoot</span>Run diagnosis
+          </button>
+        </div>
+        <div style="display: flex; gap: 8px; margin-top: 18px; align-items: center; flex-wrap: wrap; justify-content: center;">
+          <span style="font-size: 13px; color: rgba(231,236,244,0.4);">Try:</span>
+          <sc-for list="{{ samples }}" as="s" hint-placeholder-count="2">
+            <button sc-camel-on-click="{{ s.onClick }}" style="border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.03); border-radius: 999px; padding: 5px 14px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgba(231,236,244,0.65); cursor: pointer; transition: all 0.2s ease;" style-hover="border-color: rgba(94,234,212,0.5); color: #5EEAD4; background: rgba(45,212,191,0.07);">{{ s.label }}</button>
+          </sc-for>
+        </div>
+        <div data-wd-steps="1" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; width: 100%; max-width: 820px; margin-top: 64px;">
+          <sc-for list="{{ startSteps }}" as="st" hint-placeholder-count="4">
+            <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px 18px; backdrop-filter: blur(8px); position: relative; overflow: hidden;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: rgba(231,236,244,0.35); letter-spacing: 1px;">{{ st.num }}</div>
+              <span class="material-icons-outlined" style="color: {{ st.tint }}; font-size: 26px; margin-top: 12px; display: inline-block;">{{ st.icon }}</span>
+              <div style="font-weight: 700; font-size: 14.5px; margin-top: 10px;">{{ st.title }}</div>
+              <div style="font-size: 12.5px; color: rgba(231,236,244,0.55); line-height: 1.55; margin-top: 5px;">{{ st.sub }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="width: 100%; margin-top: 32px; overflow: hidden; padding: 18px 0; border-top: 1px solid rgba(255,255,255,0.06); -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);">
+        <div style="display: flex; gap: 36px; width: max-content; animation: wdmarquee 36s linear infinite;">
+          <sc-for list="{{ tickerItems }}" as="tk" hint-placeholder-count="10">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgba(231,236,244,0.3); white-space: nowrap; display: inline-flex; align-items: center; gap: 8px;"><span style="color: rgba(45,212,191,0.5);">✓</span>{{ tk }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ============ PROJECTS ============ -->
+  <sc-if value="{{ isProjects }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height: 100vh; padding: 44px 24px; box-sizing: border-box; display: flex; justify-content: center; position: relative;">
+      <div style="width: 100%; max-width: 1080px; display: flex; flex-direction: column; gap: 22px; animation: wdfade 0.4s ease;">
+        <div data-wd-scanhead="1" style="display: flex; align-items: center; gap: 16px;">
+          <div style="width: 42px; height: 42px; border-radius: 12px; background: linear-gradient(135deg, #2DD4BF, #3B82F6); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(45,212,191,0.35);">
+            <span class="material-icons" style="color: #04110D; font-size: 24px;">medical_services</span>
+          </div>
+          <div style="flex: 1;">
+            <h2 style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.5px;">Projects</h2>
+            <div style="font-size: 13px; color: rgba(231,236,244,0.5); margin-top: 2px;">{{ sitesCount }} · open any report or run a new diagnosis</div>
+          </div>
+          <button sc-camel-on-click="{{ goNewScan }}" style="border: none; background: linear-gradient(120deg, #2DD4BF, #3B82F6); color: #04110D; border-radius: 999px; padding: 12px 24px; font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 8px 28px rgba(45,212,191,0.3); white-space: nowrap;" style-hover="filter: brightness(1.12);">
+            <span class="material-icons" style="font-size: 18px;">add</span>New scan
+          </button>
+        </div>
+        <div data-wd-pages="1" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;">
+          <sc-for list="{{ projects }}" as="pj" hint-placeholder-count="2">
+            <div sc-camel-on-click="{{ pj.onOpen }}" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 18px; padding: 20px; cursor: pointer; backdrop-filter: blur(8px); transition: border-color 0.2s ease, transform 0.2s ease; display: flex; flex-direction: column; gap: 14px;" style-hover="border-color: rgba(94,234,212,0.35); transform: translateY(-3px);">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <span class="material-icons-outlined" style="font-size: 20px; color: rgba(231,236,244,0.6);">{{ pj.icon }}</span>
+                </div>
+                <div style="min-width: 0; flex: 1;">
+                  <div style="font-weight: 700; font-size: 14px; font-family: 'JetBrains Mono', monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ pj.domain }}</div>
+                  <div style="font-size: 12px; color: rgba(231,236,244,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ pj.name }}</div>
+                </div>
+                <button sc-camel-on-click="{{ pj.onRescan }}" title="Re-scan" style="border: 1px solid rgba(255,255,255,0.12); background: transparent; color: rgba(231,236,244,0.6); border-radius: 50%; width: 32px; height: 32px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" style-hover="border-color: rgba(94,234,212,0.4); color: #5EEAD4;"><span class="material-icons-outlined" style="font-size: 16px;">restart_alt</span></button>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; color: {{ pj.healthColor }}; text-shadow: 0 0 22px {{ pj.healthGlow }}; line-height: 1;">{{ pj.health }}</span>
+                <div style="flex: 1;">
+                  <div style="font-size: 12.5px; font-weight: 700; color: {{ pj.healthColor }};">{{ pj.healthLabel }}</div>
+                  <div style="height: 5px; border-radius: 3px; background: rgba(255,255,255,0.07); overflow: hidden; margin-top: 6px;">
+                    <div style="height: 100%; width: {{ pj.pctW }}; background: {{ pj.healthColor }}; border-radius: 3px; box-shadow: 0 0 8px {{ pj.healthGlow }};"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <span style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: rgba(231,236,244,0.7); border-radius: 999px; padding: 3px 11px; font-size: 11.5px; font-weight: 600; white-space: nowrap;">{{ pj.pages }}</span>
+                <span style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: rgba(231,236,244,0.7); border-radius: 999px; padding: 3px 11px; font-size: 11.5px; font-weight: 600; white-space: nowrap;">{{ pj.issues }}</span>
+                <span style="background: rgba(251,113,133,0.1); border: 1px solid rgba(251,113,133,0.35); color: #FDA4AF; border-radius: 999px; padding: 3px 11px; font-size: 11.5px; font-weight: 700; white-space: nowrap;">{{ pj.critical }}</span>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 12px;">
+                <span style="font-size: 11.5px; color: rgba(231,236,244,0.4); font-family: 'JetBrains Mono', monospace;">{{ pj.scanned }}</span>
+                <span style="display: inline-flex; align-items: center; gap: 4px; color: #5EEAD4; font-size: 12.5px; font-weight: 600;">Open report<span class="material-icons" style="font-size: 15px;">arrow_forward</span></span>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ============ ANALYZING ============ -->
+  <sc-if value="{{ isAnalyzing }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height: 100vh; padding: 44px 24px; box-sizing: border-box; display: flex; justify-content: center; position: relative;">
+      <div style="width: 100%; max-width: 1080px; display: flex; flex-direction: column; gap: 20px; animation: wdfade 0.4s ease;">
+        <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; padding: 24px 28px; backdrop-filter: blur(12px);">
+          <div data-wd-scanhead="1" style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 46px; height: 46px; border-radius: 14px; background: rgba(45,212,191,0.1); border: 1px solid rgba(94,234,212,0.25); display: flex; align-items: center; justify-content: center; animation: wdpulse 2s infinite;">{{ spinner }}</div>
+              <div>
+                <div style="font-size: 20px; font-weight: 700; letter-spacing: -0.3px;">Diagnosing <span style="color: #5EEAD4; font-family: 'JetBrains Mono', monospace; font-size: 17px;">{{ scanUrl }}</span></div>
+                <div style="font-size: 13px; color: rgba(231,236,244,0.55); margin-top: 3px;">{{ stageLabel }}</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 18px;">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700; background: linear-gradient(100deg, #2DD4BF, #60A5FA); -webkit-background-clip: text; background-clip: text; color: transparent;">{{ progressPct }}%</span>
+              <button sc-camel-on-click="{{ cancelScan }}" style="border: 1px solid rgba(255,255,255,0.15); background: transparent; color: rgba(231,236,244,0.7); border-radius: 999px; padding: 8px 18px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer;" style-hover="border-color: rgba(255,255,255,0.35); color: #E7ECF4;">Cancel</button>
+            </div>
+          </div>
+          <div style="margin-top: 20px; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.07); overflow: hidden;">
+            <div style="height: 100%; width: {{ progressW }}; background: linear-gradient(90deg, #2DD4BF, #3B82F6, #A78BFA); border-radius: 3px; box-shadow: 0 0 16px rgba(45,212,191,0.5); transition: width 0.5s ease;"></div>
+          </div>
+        </div>
+        <div data-wd-analyze="1" style="display: grid; grid-template-columns: 420px 1fr; gap: 20px; align-items: start;">
+          <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; padding: 12px 0; backdrop-filter: blur(12px);">
+            <div style="padding: 12px 24px 10px; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(231,236,244,0.4);">Pipeline</div>
+            <sc-for list="{{ stages }}" as="stg" hint-placeholder-count="6">
+              <div style="display: flex; align-items: center; gap: 14px; padding: 9px 24px; background: {{ stg.bg }}; position: relative;">
+                {{ stg.statusNode }}
+                <div style="flex: 1;">
+                  <div style="font-size: 14px; font-weight: {{ stg.weight }}; color: {{ stg.color }};">{{ stg.name }}</div>
+                  <sc-if value="{{ stg.active }}" hint-placeholder-val="{{ false }}">
+                    <div style="font-size: 12px; color: rgba(231,236,244,0.5); margin-top: 1px;">{{ stg.detail }}</div>
+                  </sc-if>
+                </div>
+                <span class="material-icons-outlined" style="font-size: 17px; color: rgba(231,236,244,0.2);">{{ stg.icon }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div data-wd-stats="1" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
+              <sc-for list="{{ liveStats }}" as="ls" hint-placeholder-count="4">
+                <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; padding: 16px 18px; backdrop-filter: blur(8px);">
+                  <div style="font-size: 12px; color: rgba(231,236,244,0.5);">{{ ls.label }}</div>
+                  <div style="font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700; margin-top: 6px; color: #E7ECF4;">{{ ls.value }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <div style="background: rgba(3,6,12,0.75); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 18px 0; display: flex; flex-direction: column; min-height: 330px; backdrop-filter: blur(12px);">
+              <div style="padding: 0 24px 12px; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(231,236,244,0.35); display: flex; align-items: center; gap: 10px;">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: #34D399; box-shadow: 0 0 10px rgba(52,211,153,0.8); animation: wdblink 1.2s infinite;"></span>
+                Live telemetry
+              </div>
+              <div data-wd-log="1" style="flex: 1; overflow-y: auto; max-height: 310px; padding: 0 24px; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 2;">
+                <sc-for list="{{ logs }}" as="lg" hint-placeholder-count="3">
+                  <div style="color: {{ lg.color }}; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><span style="color: rgba(231,236,244,0.25);">{{ lg.time }}</span>  {{ lg.text }}</div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ============ DASHBOARD ============ -->
+  <sc-if value="{{ isDash }}" hint-placeholder-val="{{ false }}">
+    <div data-wd-shell="1" style="display: flex; height: 100vh; overflow: hidden; position: relative;">
+      <!-- Sidebar -->
+      <div data-wd-sidebar="1" style="width: 248px; flex-shrink: 0; background: rgba(255,255,255,0.025); border-right: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; backdrop-filter: blur(16px);">
+        <div data-wd-logo="1" style="display: flex; align-items: center; gap: 12px; padding: 20px 22px; border-bottom: 1px solid rgba(255,255,255,0.07);">
+          <div style="width: 36px; height: 36px; border-radius: 11px; background: linear-gradient(135deg, #2DD4BF, #3B82F6); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(45,212,191,0.35);">
+            <span class="material-icons" style="color: #04110D; font-size: 21px;">medical_services</span>
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: 16px; letter-spacing: -0.3px; line-height: 1.2;">Website Doctor</div>
+            <div style="font-size: 11px; color: rgba(231,236,244,0.45); letter-spacing: 1.5px; text-transform: uppercase;">Diagnosis report</div>
+          </div>
+        </div>
+        <div data-wd-nav="1" style="padding: 14px 12px; display: flex; flex-direction: column; gap: 3px;">
+          <div sc-camel-on-click="{{ goProjects }}" style="display: flex; align-items: center; gap: 13px; padding: 11px 14px; border-radius: 12px; cursor: pointer; border: 1px solid transparent; margin-bottom: 6px; transition: background 0.2s ease;" style-hover="background: rgba(255,255,255,0.05);">
+            <span class="material-icons-outlined" style="font-size: 20px; color: rgba(231,236,244,0.45);">apps</span>
+            <span style="flex: 1; font-size: 14px; font-weight: 500; color: rgba(231,236,244,0.75);">All projects</span>
+            <span class="material-icons" style="font-size: 16px; color: rgba(231,236,244,0.3);">chevron_right</span>
+          </div>
+          <sc-for list="{{ navItems }}" as="nv" hint-placeholder-count="4">
+            <div sc-camel-on-click="{{ nv.onClick }}" style="display: flex; align-items: center; gap: 13px; padding: 11px 14px; border-radius: 12px; cursor: pointer; background: {{ nv.bg }}; border: 1px solid {{ nv.borderC }}; transition: background 0.2s ease;" style-hover="background: rgba(255,255,255,0.05);">
+              <span class="material-icons-outlined" style="font-size: 20px; color: {{ nv.iconColor }};">{{ nv.icon }}</span>
+              <span style="flex: 1; font-size: 14px; font-weight: {{ nv.weight }}; color: {{ nv.color }};">{{ nv.label }}</span>
+              <sc-if value="{{ nv.badge }}" hint-placeholder-val="{{ false }}">
+                <span style="background: {{ nv.badgeBg }}; color: {{ nv.badgeColor }}; border-radius: 999px; font-size: 11px; font-weight: 700; padding: 2px 9px; font-family: 'JetBrains Mono', monospace;">{{ nv.badge }}</span>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+        <div data-wd-sidefoot="1" style="margin-top: auto; padding: 18px; border-top: 1px solid rgba(255,255,255,0.07);">
+          <div style="font-size: 11.5px; color: rgba(231,236,244,0.45); line-height: 1.7; font-family: 'JetBrains Mono', monospace;">{{ siteScanned }}<br>8 pages · 331 checks · 96s</div>
+          <button sc-camel-on-click="{{ rescan }}" style="margin-top: 12px; width: 100%; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.03); color: rgba(231,236,244,0.8); border-radius: 999px; padding: 9px 0; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;" style-hover="border-color: rgba(94,234,212,0.4); color: #5EEAD4;">
+            <span class="material-icons-outlined" style="font-size: 17px;">restart_alt</span>Re-scan site
+          </button>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 0; min-height: 0;">
+        <div data-wd-topbar="1" style="min-height: 70px; flex-shrink: 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; flex-wrap: wrap; gap: 12px 16px; padding: 12px 28px; box-sizing: border-box; background: rgba(7,9,15,0.6); backdrop-filter: blur(16px);">
+          <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+            <span class="material-icons-outlined" style="font-size: 21px; color: rgba(231,236,244,0.6);">{{ siteIcon }}</span>
+          </div>
+          <div style="min-width: 0; flex-shrink: 1;">
+            <div style="font-weight: 700; font-size: 15.5px; font-family: 'JetBrains Mono', monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ siteDomain }}</div>
+            <div style="font-size: 12px; color: rgba(231,236,244,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ siteMeta }}</div>
+          </div>
+          <div style="flex: 1;"></div>
+          <span style="display: inline-flex; align-items: center; gap: 8px; background: {{ healthChipBg }}; border: 1px solid {{ healthChipBorder }}; color: {{ healthChipText }}; border-radius: 999px; padding: 6px 15px; font-size: 13px; font-weight: 700; white-space: nowrap; flex-shrink: 0;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: {{ healthColor }}; box-shadow: 0 0 10px {{ healthGlow }};"></span>
+            Health {{ siteHealth }} · {{ healthLabel }}
+          </span>
+          <button sc-camel-on-click="{{ askAi }}" style="border: 1px solid rgba(255,255,255,0.14); background: transparent; color: rgba(231,236,244,0.8); border-radius: 999px; padding: 9px 18px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 7px; white-space: nowrap; flex-shrink: 0;" style-hover="border-color: rgba(94,234,212,0.4); color: #5EEAD4;">
+            <span class="material-icons-outlined" style="font-size: 17px;">forum</span>Ask AI
+          </button>
+          <button sc-camel-on-click="{{ exportReport }}" style="border: none; background: linear-gradient(120deg, #2DD4BF, #3B82F6); color: #04110D; border-radius: 999px; padding: 10px 20px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 7px; white-space: nowrap; flex-shrink: 0; box-shadow: 0 6px 22px rgba(45,212,191,0.28);" style-hover="filter: brightness(1.12);">
+            <span class="material-icons" style="font-size: 17px;">download</span>Export report
+          </button>
+        </div>
+
+        <div data-wd-content="1" style="flex: 1; min-height: 0; overflow-y: auto; padding: 28px; box-sizing: border-box;">
+
+          <!-- ===== OVERVIEW ===== -->
+          <sc-if value="{{ secOverview }}" hint-placeholder-val="{{ true }}">
+            <div data-screen-label="Overview" style="display: flex; flex-direction: column; gap: 18px; max-width: 1320px; margin: 0 auto; animation: wdfade 0.35s ease;">
+              <div data-wd-hero="1" style="display: grid; grid-template-columns: 5fr 4fr 3fr; gap: 18px;">
+                <div data-wd-health="1" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; padding: 24px 28px; display: flex; gap: 26px; align-items: center; backdrop-filter: blur(12px); position: relative; overflow: hidden;">
+                  <div style="position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(251,191,36,0.12), transparent 70%);"></div>
+                  <div style="position: relative; width: 150px; height: 150px; flex-shrink: 0;">
+                    <svg width="150" height="150" sc-camel-view-box="0 0 150 150">
+                      <circle cx="75" cy="75" r="62" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="11"></circle>
+                      <circle cx="75" cy="75" r="62" fill="none" stroke="{{ healthColor }}" stroke-width="11" stroke-linecap="round" stroke-dasharray="{{ ringDash }}" transform="rotate(-90 75 75)" style="filter: drop-shadow(0 0 8px {{ healthGlow }});"></circle>
+                    </svg>
+                    <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;">
+                      <span style="font-family: 'JetBrains Mono', monospace; font-size: 38px; font-weight: 700; line-height: 1;">{{ siteHealth }}</span>
+                      <span style="font-size: 11px; color: rgba(231,236,244,0.5);">of 100</span>
+                    </div>
+                  </div>
+                  <div style="flex: 1; position: relative;">
+                    <div style="font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(231,236,244,0.45);">Website health</div>
+                    <div style="font-size: 24px; font-weight: 700; margin-top: 6px; letter-spacing: -0.5px; color: {{ healthColor }};">{{ healthLabel }}</div>
+                    <p style="margin: 8px 0 0; font-size: 13px; color: rgba(231,236,244,0.6); line-height: 1.6; text-wrap: pretty;">Solid content and UX, held back by slow images and accessibility gaps in the booking flow.</p>
+                    <div style="display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap;">
+                      <sc-for list="{{ sevChips }}" as="sc" hint-placeholder-count="4">
+                        <span style="display: inline-flex; align-items: center; gap: 7px; background: {{ sc.bg }}; border: 1px solid {{ sc.borderC }}; color: {{ sc.text }}; border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 700; white-space: nowrap;">
+                          <span style="width: 7px; height: 7px; border-radius: 50%; background: {{ sc.dot }}; box-shadow: 0 0 8px {{ sc.dot }};"></span>{{ sc.label }}
+                        </span>
+                      </sc-for>
+                    </div>
+                  </div>
+                </div>
+                <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; padding: 20px 24px; backdrop-filter: blur(12px);">
+                  <div style="font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(231,236,244,0.45);">Score profile</div>
+                  <div style="display: flex; align-items: center; gap: 18px; margin-top: 8px; flex-wrap: wrap;">
+                    <svg width="180" height="164" sc-camel-view-box="30 20 200 176" style="flex-shrink: 0;">
+                      <sc-for list="{{ radarGrid }}" as="g" hint-placeholder-count="3">
+                        <polygon points="{{ g }}" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"></polygon>
+                      </sc-for>
+                      <sc-for list="{{ radarAxes }}" as="ax" hint-placeholder-count="6">
+                        <line x1="130" y1="106" x2="{{ ax.x }}" y2="{{ ax.y }}" stroke="rgba(255,255,255,0.08)" stroke-width="1"></line>
+                      </sc-for>
+                      <polygon points="{{ radarPoints }}" fill="rgba(45,212,191,0.14)" stroke="#2DD4BF" stroke-width="2" style="filter: drop-shadow(0 0 6px rgba(45,212,191,0.5));"></polygon>
+                      <sc-for list="{{ radarDots }}" as="d" hint-placeholder-count="6">
+                        <circle cx="{{ d.x }}" cy="{{ d.y }}" r="3.2" fill="#5EEAD4"></circle>
+                      </sc-for>
+                    </svg>
+                    <div style="flex: 1; min-width: 150px; display: flex; flex-direction: column; gap: 7px;">
+                      <sc-for list="{{ radarLegend }}" as="rl" hint-placeholder-count="6">
+                        <div style="display: flex; align-items: center; gap: 9px;">
+                          <span style="width: 8px; height: 8px; border-radius: 50%; background: {{ rl.color }}; box-shadow: 0 0 7px {{ rl.glow }}; flex-shrink: 0;"></span>
+                          <span style="font-size: 12.5px; color: rgba(231,236,244,0.7); flex: 1; white-space: nowrap;">{{ rl.label }}</span>
+                          <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; color: {{ rl.color }};">{{ rl.score }}</span>
+                          <sc-if value="{{ rl.tag }}" hint-placeholder-val="{{ false }}">
+                            <span style="background: {{ rl.tagBg }}; border: 1px solid {{ rl.tagBorder }}; color: {{ rl.tagColor }}; border-radius: 999px; padding: 1px 8px; font-size: 10px; font-weight: 700; white-space: nowrap;">{{ rl.tag }}</span>
+                          </sc-if>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </div>
+                <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; padding: 20px 24px; display: flex; flex-direction: column; backdrop-filter: blur(12px);">
+                  <div style="font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(231,236,244,0.45);">Issues by severity</div>
+                  <div style="display: flex; align-items: center; gap: 18px; margin-top: 14px;">
+                    <svg width="122" height="122" sc-camel-view-box="0 0 120 120">
+                      <sc-for list="{{ donutSegs }}" as="dg" hint-placeholder-count="4">
+                        <circle cx="60" cy="60" r="44" fill="none" stroke="{{ dg.color }}" stroke-width="14" stroke-dasharray="{{ dg.dash }}" stroke-dashoffset="{{ dg.offset }}" stroke-linecap="round" transform="rotate(-90 60 60)"></circle>
+                      </sc-for>
+                      <text x="60" y="58" text-anchor="middle" style="font-family: 'JetBrains Mono', monospace; font-size: 24px; font-weight: 700; fill: #E7ECF4;">23</text>
+                      <text x="60" y="77" text-anchor="middle" style="font-family: 'Space Grotesk', sans-serif; font-size: 10px; fill: rgba(231,236,244,0.5);">issues</text>
+                    </svg>
+                    <div style="display: flex; flex-direction: column; gap: 9px;">
+                      <sc-for list="{{ sevLegend }}" as="sl" hint-placeholder-count="4">
+                        <div style="display: flex; align-items: center; gap: 9px; font-size: 12px;">
+                          <span style="width: 9px; height: 9px; border-radius: 3px; background: {{ sl.color }}; box-shadow: 0 0 8px {{ sl.color }};"></span>
+                          <span style="color: rgba(231,236,244,0.55); width: 54px;">{{ sl.label }}</span>
+                          <span style="font-family: 'JetBrains Mono', monospace; font-weight: 700;">{{ sl.count }}</span>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div data-wd-scores="1" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px;">
+                <sc-for list="{{ scoreCards }}" as="scd" hint-placeholder-count="6">
+                  <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; padding: 18px; backdrop-filter: blur(8px);">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                      <span class="material-icons-outlined" style="font-size: 17px; color: rgba(231,236,244,0.45);">{{ scd.icon }}</span>
+                      <span style="font-size: 12px; font-weight: 600; color: rgba(231,236,244,0.6);">{{ scd.label }}</span>
+                    </div>
+                    <div style="display: flex; align-items: baseline; gap: 5px; margin-top: 12px;">
+                      <span style="font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 700; color: {{ scd.color }}; text-shadow: 0 0 20px {{ scd.glow }};">{{ scd.score }}</span>
+                      <span style="font-size: 12px; color: rgba(231,236,244,0.35);">/100</span>
+                    </div>
+                    <div style="height: 4px; border-radius: 2px; background: rgba(255,255,255,0.07); margin-top: 12px; overflow: hidden;">
+                      <div style="height: 100%; width: {{ scd.pct }}; background: {{ scd.color }}; border-radius: 2px; box-shadow: 0 0 8px {{ scd.glow }};"></div>
+                    </div>
+                    <div style="font-size: 11.5px; color: rgba(231,236,244,0.45); margin-top: 10px;">{{ scd.sub }}</div>
+                  </div>
+                </sc-for>
+              </div>
+
+              <div data-wd-bottom="1" style="display: grid; grid-template-columns: 7fr 5fr; gap: 18px; align-items: start;">
+                <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; backdrop-filter: blur(12px); overflow: hidden;">
+                  <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid rgba(255,255,255,0.07);">
+                    <div style="font-size: 16px; font-weight: 700; letter-spacing: -0.3px;">Top issues to fix</div>
+                    <button sc-camel-on-click="{{ goIssues }}" style="border: none; background: transparent; color: #5EEAD4; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 5px; padding: 4px 8px;" style-hover="text-decoration: underline;">View all 23<span class="material-icons" style="font-size: 16px;">arrow_forward</span></button>
+                  </div>
+                  <sc-for list="{{ topIssues }}" as="ti" hint-placeholder-count="5">
+                    <div sc-camel-on-click="{{ ti.onClick }}" style="display: flex; align-items: center; gap: 14px; padding: 13px 24px; border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer; transition: background 0.15s ease;" style-hover="background: rgba(255,255,255,0.03);">
+                      <span style="display: inline-flex; align-items: center; background: {{ ti.sevBg }}; border: 1px solid {{ ti.sevBorder }}; color: {{ ti.sevText }}; border-radius: 999px; padding: 3px 11px; font-size: 11px; font-weight: 700; width: 62px; justify-content: center;">{{ ti.sevLabel }}</span>
+                      <div style="flex: 1; min-width: 0;">
+                        <div style="font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ ti.title }}</div>
+                        <div style="font-size: 12px; color: rgba(231,236,244,0.5); margin-top: 2px;">{{ ti.cat }} · {{ ti.page }}</div>
+                      </div>
+                      <span class="material-icons" style="font-size: 18px; color: rgba(231,236,244,0.25);">chevron_right</span>
+                    </div>
+                  </sc-for>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 18px;">
+                  <div style="background: linear-gradient(140deg, rgba(45,212,191,0.08), rgba(59,130,246,0.06) 50%, rgba(167,139,250,0.08)); border: 1px solid rgba(94,234,212,0.2); border-radius: 20px; padding: 20px 24px; backdrop-filter: blur(12px);">
+                    <div style="display: flex; align-items: center; gap: 9px;">
+                      <span class="material-icons" style="font-size: 19px; color: #5EEAD4;">auto_awesome</span>
+                      <span style="font-size: 16px; font-weight: 700; letter-spacing: -0.3px;">AI summary</span>
+                    </div>
+                    <p style="margin: 12px 0 0; font-size: 13px; line-height: 1.7; color: rgba(231,236,244,0.75); text-wrap: pretty;">The site presents well visually, but three problems cost you bookings: the homepage takes 6.8 s to show its hero, the booking form is unusable with a screen reader, and the primary "Book now" button fails contrast on every page. Fixing the top 3 issues alone should lift the health score to roughly 80.</p>
+                    <button sc-camel-on-click="{{ askAi }}" style="margin-top: 16px; border: 1px solid rgba(94,234,212,0.35); background: rgba(45,212,191,0.08); color: #5EEAD4; border-radius: 999px; padding: 8px 18px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 7px;" style-hover="background: rgba(45,212,191,0.15);">
+                      <span class="material-icons-outlined" style="font-size: 16px;">forum</span>Ask about this site
+                    </button>
+                  </div>
+                  <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; padding: 20px 24px; backdrop-filter: blur(12px);">
+                    <div style="font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(231,236,244,0.45);">Issues by category</div>
+                    <div style="display: flex; flex-direction: column; gap: 11px; margin-top: 16px;">
+                      <sc-for list="{{ catBars }}" as="cb" hint-placeholder-count="6">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                          <span style="font-size: 12px; color: rgba(231,236,244,0.55); width: 94px; flex-shrink: 0;">{{ cb.label }}</span>
+                          <div style="flex: 1; height: 7px; border-radius: 4px; background: rgba(255,255,255,0.06); overflow: hidden;">
+                            <div style="height: 100%; width: {{ cb.pct }}; background: linear-gradient(90deg, #2DD4BF, #3B82F6); border-radius: 4px;"></div>
+                          </div>
+                          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; width: 18px; text-align: right;">{{ cb.count }}</span>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <!-- ===== ISSUES ===== -->
+          <sc-if value="{{ secIssues }}" hint-placeholder-val="{{ false }}">
+            <div data-screen-label="Issues" style="display: flex; flex-direction: column; gap: 16px; max-width: 1320px; margin: 0 auto; animation: wdfade 0.35s ease;">
+              <div style="display: flex; align-items: baseline; gap: 14px;">
+                <h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.5px;">Issues</h2>
+                <span style="font-size: 13px; color: rgba(231,236,244,0.5);">{{ filterSummary }}</span>
+              </div>
+              <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; backdrop-filter: blur(12px); overflow: hidden;">
+                <div style="display: flex; gap: 12px; padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.07); align-items: center; flex-wrap: wrap;">
+                  <div data-wd-search="1" style="display: flex; align-items: center; gap: 9px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 0 16px; width: 250px;">
+                    <span class="material-icons-outlined" style="font-size: 18px; color: rgba(231,236,244,0.4);">search</span>
+                    <input value="{{ filterQ }}" sc-camel-on-change="{{ onSearch }}" placeholder="Search issues" style="flex: 1; border: none; outline: none; font-family: 'Space Grotesk', sans-serif; font-size: 13px; padding: 9px 0; background: transparent; color: #E7ECF4; min-width: 0;">
+                  </div>
+                  <sc-raw-select value="{{ filterCat }}" sc-camel-on-change="{{ onCatSel }}" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 9px 16px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; color: #E7ECF4; cursor: pointer; outline: none;">
+                    <sc-for list="{{ catOptions }}" as="co" hint-placeholder-count="4"><option value="{{ co }}">{{ co }}</option></sc-for>
+                  </sc-raw-select>
+                  <sc-raw-select value="{{ filterSev }}" sc-camel-on-change="{{ onSevSel }}" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 9px 16px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; color: #E7ECF4; cursor: pointer; outline: none;">
+                    <sc-for list="{{ sevOptions }}" as="so" hint-placeholder-count="4"><option value="{{ so }}">{{ so }}</option></sc-for>
+                  </sc-raw-select>
+                  <sc-if value="{{ hasFilters }}" hint-placeholder-val="{{ false }}">
+                    <button sc-camel-on-click="{{ clearFilters }}" style="border: none; background: transparent; color: rgba(231,236,244,0.55); font-family: 'Space Grotesk', sans-serif; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 4px; padding: 4px;" style-hover="color: #E7ECF4;"><span class="material-icons" style="font-size: 15px;">close</span>Clear</button>
+                  </sc-if>
+                  <div style="flex: 1;"></div>
+                  <div style="display: flex; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 3px; gap: 2px;">
+                    <sc-for list="{{ statusTabs }}" as="tb" hint-placeholder-count="3">
+                      <button sc-camel-on-click="{{ tb.onClick }}" style="border: none; background: {{ tb.bg }}; color: {{ tb.color }}; border-radius: 999px; padding: 6px 16px; font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">{{ tb.label }}</button>
+                    </sc-for>
+                  </div>
+                </div>
+                <div data-wd-issuerow="1" style="display: grid; grid-template-columns: 92px minmax(0, 1fr) 140px 116px 96px 36px; gap: 12px; padding: 10px 20px; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 10.5px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(231,236,244,0.4);">
+                  <span>Severity</span><span>Issue</span><span data-wd-hidecol="1">Page</span><span data-wd-hidecol="1">Category</span><span data-wd-hidecol2="1">Status</span><span></span>
+                </div>
+                <sc-for list="{{ issueRows }}" as="ir" hint-placeholder-count="8">
+                  <div data-wd-issuerow="1" sc-camel-on-click="{{ ir.onClick }}" style="display: grid; grid-template-columns: 92px minmax(0, 1fr) 140px 116px 96px 36px; gap: 12px; padding: 12px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); align-items: center; cursor: pointer; opacity: {{ ir.opacity }}; transition: background 0.15s ease;" style-hover="background: rgba(255,255,255,0.03);">
+                    <span style="display: inline-flex; align-items: center; background: {{ ir.sevBg }}; border: 1px solid {{ ir.sevBorder }}; color: {{ ir.sevText }}; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 700; justify-content: center;">{{ ir.sevLabel }}</span>
+                    <div style="min-width: 0;">
+                      <div style="font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ ir.title }}</div>
+                      <div style="font-size: 12px; color: rgba(231,236,244,0.45); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;">{{ ir.desc }}</div>
+                    </div>
+                    <span data-wd-hidecol="1" style="font-size: 12px; color: rgba(231,236,244,0.55); font-family: 'JetBrains Mono', monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ ir.page }}</span>
+                    <span data-wd-hidecol="1" style="font-size: 13px; color: rgba(231,236,244,0.55);">{{ ir.cat }}</span>
+                    <span data-wd-hidecol2="1" style="display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: {{ ir.statusColor }};">
+                      <span class="material-icons" style="font-size: 15px;">{{ ir.statusIcon }}</span>{{ ir.status }}
+                    </span>
+                    <span class="material-icons" style="font-size: 18px; color: rgba(231,236,244,0.25); justify-self: end;">chevron_right</span>
+                  </div>
+                </sc-for>
+                <sc-if value="{{ noIssues }}" hint-placeholder-val="{{ false }}">
+                  <div style="padding: 44px; text-align: center; color: rgba(231,236,244,0.45); font-size: 14px;">No issues match the current filters.</div>
+                </sc-if>
+              </div>
+            </div>
+          </sc-if>
+
+          <!-- ===== PAGES ===== -->
+          <sc-if value="{{ secPages }}" hint-placeholder-val="{{ false }}">
+            <div data-screen-label="Pages" style="display: flex; flex-direction: column; gap: 16px; max-width: 1320px; margin: 0 auto; animation: wdfade 0.35s ease;">
+              <div style="display: flex; align-items: baseline; gap: 14px;">
+                <h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.5px;">Page explorer</h2>
+                <span style="font-size: 13px; color: rgba(231,236,244,0.5);">8 pages crawled · click a page to see its issues</span>
+              </div>
+              <div data-wd-pages="1" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;">
+                <sc-for list="{{ pageCards }}" as="pg" hint-placeholder-count="8">
+                  <div sc-camel-on-click="{{ pg.onClick }}" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 18px; overflow: hidden; cursor: pointer; backdrop-filter: blur(8px); transition: border-color 0.2s ease, transform 0.2s ease;" style-hover="border-color: rgba(94,234,212,0.35); transform: translateY(-3px);">
+                    <div style="background: rgba(0,0,0,0.3); border-bottom: 1px solid rgba(255,255,255,0.07); padding: 12px 14px 0;">
+                      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-bottom: none; border-radius: 8px 8px 0 0; height: 96px; padding: 9px 11px; box-sizing: border-box; overflow: hidden;">
+                        <div style="display: flex; gap: 4px; margin-bottom: 8px;">
+                          <span style="width: 6px; height: 6px; border-radius: 50%; background: rgba(251,113,133,0.6);"></span>
+                          <span style="width: 6px; height: 6px; border-radius: 50%; background: rgba(251,191,36,0.6);"></span>
+                          <span style="width: 6px; height: 6px; border-radius: 50%; background: rgba(52,211,153,0.6);"></span>
+                        </div>
+                        <div style="height: 26px; border-radius: 4px; background: {{ pg.heroTint }}; margin-bottom: 6px; display: flex; align-items: center; justify-content: center;">
+                          <span class="material-icons-outlined" style="font-size: 15px; color: rgba(231,236,244,0.4);">{{ pg.mockIcon }}</span>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px;">
+                          <div style="height: 18px; border-radius: 3px; background: rgba(255,255,255,0.05);"></div>
+                          <div style="height: 18px; border-radius: 3px; background: rgba(255,255,255,0.05);"></div>
+                          <div style="height: 18px; border-radius: 3px; background: rgba(255,255,255,0.05);"></div>
+                        </div>
+                        <div style="height: 7px; border-radius: 3px; background: rgba(255,255,255,0.05); margin-top: 5px; width: 70%;"></div>
+                      </div>
+                    </div>
+                    <div style="padding: 14px 16px;">
+                      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+                        <div style="font-weight: 700; font-size: 14.5px;">{{ pg.name }}</div>
+                        <span style="background: {{ pg.issueBg }}; border: 1px solid {{ pg.issueBorder }}; color: {{ pg.issueText }}; border-radius: 999px; font-size: 11px; font-weight: 700; padding: 2px 9px; font-family: 'JetBrains Mono', monospace;">{{ pg.issues }}</span>
+                      </div>
+                      <div style="font-size: 12px; color: rgba(231,236,244,0.45); font-family: 'JetBrains Mono', monospace; margin-top: 3px;">{{ pg.path }}</div>
+                      <div style="display: flex; gap: 6px; margin-top: 12px;">
+                        <sc-for list="{{ pg.minis }}" as="mn" hint-placeholder-count="3">
+                          <span style="flex: 1; text-align: center; background: {{ mn.bg }}; color: {{ mn.text }}; border-radius: 8px; padding: 5px 0; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace;">{{ mn.label }} {{ mn.val }}</span>
+                        </sc-for>
+                      </div>
+                      <div style="display: flex; gap: 14px; margin-top: 11px; font-size: 11px; color: rgba(231,236,244,0.45); font-family: 'JetBrains Mono', monospace;">
+                        <span>LCP {{ pg.lcp }}</span><span>CLS {{ pg.cls }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-if>
+
+          <!-- ===== CHECK REGISTRY ===== -->
+          <sc-if value="{{ secChecks }}" hint-placeholder-val="{{ false }}">
+            <div data-screen-label="Check registry" style="display: flex; flex-direction: column; gap: 16px; max-width: 1100px; margin: 0 auto; animation: wdfade 0.35s ease;">
+              <div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;">
+                <h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.5px;">Check registry</h2>
+                <span style="font-size: 13px; color: rgba(231,236,244,0.5);">331 automated checks across 19 categories — every one run on this scan</span>
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <sc-for list="{{ dataSources }}" as="dsc" hint-placeholder-count="5">
+                  <span style="display: inline-flex; align-items: center; gap: 7px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 5px 13px; font-size: 12px; color: rgba(231,236,244,0.7); white-space: nowrap;">
+                    <span class="material-icons-outlined" style="font-size: 15px; color: rgba(231,236,244,0.45);">{{ dsc.icon }}</span>
+                    {{ dsc.label }}
+                    <span style="display: inline-flex; align-items: center; gap: 4px; color: #6EE7B7; font-weight: 600;"><span style="width: 5px; height: 5px; border-radius: 50%; background: #34D399;"></span>{{ dsc.status }}</span>
+                  </span>
+                </sc-for>
+              </div>
+              <div data-wd-stats="1" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
+                <sc-for list="{{ checksSummary }}" as="cs2" hint-placeholder-count="4">
+                  <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; padding: 14px 18px; backdrop-filter: blur(8px);">
+                    <div style="font-size: 12px; color: rgba(231,236,244,0.5);">{{ cs2.label }}</div>
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 700; margin-top: 4px; color: {{ cs2.color }};">{{ cs2.value }}</div>
+                    <div style="font-size: 11px; color: rgba(231,236,244,0.45); margin-top: 3px;">{{ cs2.sub }}</div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 10px; background: rgba(56,189,248,0.06); border: 1px solid rgba(56,189,248,0.2); border-radius: 12px; padding: 12px 16px;">
+                <span class="material-icons-outlined" style="font-size: 17px; color: #7DD3FC; flex-shrink: 0; margin-top: 1px;">info</span>
+                <span style="font-size: 12.5px; line-height: 1.6; color: rgba(231,236,244,0.7);">Every failed check opens exactly one issue with the same severity — <b style="color: #E7ECF4;">23 failed checks = 23 issues (4 critical · 8 high · 7 medium · 4 low)</b>, identical wherever counts appear. Warnings are advisory and never create issues.</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+                <div data-wd-search="1" style="display: flex; align-items: center; gap: 9px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 0 16px; width: 250px;">
+                  <span class="material-icons-outlined" style="font-size: 18px; color: rgba(231,236,244,0.4);">search</span>
+                  <input value="{{ checkQ }}" sc-camel-on-change="{{ onCheckQ }}" placeholder="Search 331 checks" style="flex: 1; border: none; outline: none; font-family: 'Space Grotesk', sans-serif; font-size: 13px; padding: 9px 0; background: transparent; color: #E7ECF4; min-width: 0;">
+                </div>
+                <sc-raw-select value="{{ checkSev }}" sc-camel-on-change="{{ onCheckSev }}" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 9px 16px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; color: #E7ECF4; cursor: pointer; outline: none;">
+                  <sc-for list="{{ checkSevOptions }}" as="cso" hint-placeholder-count="4"><option value="{{ cso }}">{{ cso }}</option></sc-for>
+                </sc-raw-select>
+                <div style="flex: 1;"></div>
+                <div style="display: flex; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: 3px; gap: 2px;">
+                  <sc-for list="{{ checkStatusTabs }}" as="ctb" hint-placeholder-count="4">
+                    <button sc-camel-on-click="{{ ctb.onClick }}" style="border: none; background: {{ ctb.bg }}; color: {{ ctb.color }}; border-radius: 999px; padding: 6px 14px; font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">{{ ctb.label }}</button>
+                  </sc-for>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <sc-for list="{{ checkCats }}" as="cc" hint-placeholder-count="6">
+                  <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; backdrop-filter: blur(8px); overflow: hidden;">
+                    <div sc-camel-on-click="{{ cc.onToggle }}" style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; cursor: pointer;" style-hover="background: rgba(255,255,255,0.03);">
+                      <span class="material-icons" style="font-size: 20px; color: rgba(231,236,244,0.4);">{{ cc.chev }}</span>
+                      <span style="font-size: 14.5px; font-weight: 700; flex-shrink: 0;">{{ cc.name }}</span>
+                      <sc-if value="{{ cc.hasFailed }}" hint-placeholder-val="{{ false }}">
+                        <span style="background: rgba(251,113,133,0.1); border: 1px solid rgba(251,113,133,0.35); color: #FDA4AF; border-radius: 999px; padding: 2px 10px; font-size: 11px; font-weight: 700; white-space: nowrap;">{{ cc.failedLabel }}</span>
+                      </sc-if>
+                      <sc-if value="{{ cc.hasWarns }}" hint-placeholder-val="{{ false }}">
+                        <span style="background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.35); color: #FCD34D; border-radius: 999px; padding: 2px 10px; font-size: 11px; font-weight: 700; white-space: nowrap;">{{ cc.warnsLabel }}</span>
+                      </sc-if>
+                      <div style="flex: 1;"></div>
+                      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgba(231,236,244,0.5); white-space: nowrap;">{{ cc.countLabel }}</span>
+                      <div style="width: 90px; height: 5px; border-radius: 3px; background: rgba(255,255,255,0.07); overflow: hidden; flex-shrink: 0;">
+                        <div style="height: 100%; width: {{ cc.pct }}; background: {{ cc.barColor }}; border-radius: 3px;"></div>
+                      </div>
+                    </div>
+                    <sc-if value="{{ cc.expanded }}" hint-placeholder-val="{{ false }}">
+                      <div style="border-top: 1px solid rgba(255,255,255,0.06);">
+                        <sc-for list="{{ cc.rows }}" as="cr" hint-placeholder-count="6">
+                          <div sc-camel-on-click="{{ cr.onClick }}" style="display: flex; align-items: center; gap: 12px; padding: 9px 20px 9px 54px; border-bottom: 1px solid rgba(255,255,255,0.04); cursor: {{ cr.cursor }};" style-hover="background: rgba(255,255,255,0.02);">
+                            <span class="material-icons" style="font-size: 16px; color: {{ cr.statusColor }}; flex-shrink: 0;">{{ cr.statusIcon }}</span>
+                            <span style="flex: 1; font-size: 13px; color: {{ cr.nameColor }}; min-width: 0;">{{ cr.name }}</span>
+                            <span style="background: {{ cr.sevBg }}; border: 1px solid {{ cr.sevBorder }}; color: {{ cr.sevColor }}; border-radius: 999px; padding: 1px 9px; font-size: 10.5px; font-weight: 700; white-space: nowrap; flex-shrink: 0;">{{ cr.sevLabel }}</span>
+                            <sc-if value="{{ cr.hasIssue }}" hint-placeholder-val="{{ false }}">
+                              <span style="display: inline-flex; align-items: center; gap: 3px; color: #5EEAD4; font-size: 12px; font-weight: 600; white-space: nowrap; flex-shrink: 0;">View issue<span class="material-icons" style="font-size: 14px;">chevron_right</span></span>
+                            </sc-if>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                  </div>
+                </sc-for>
+                <sc-if value="{{ noChecks }}" hint-placeholder-val="{{ false }}">
+                  <div style="padding: 44px; text-align: center; color: rgba(231,236,244,0.45); font-size: 14px; background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px;">No checks match the current filters.</div>
+                </sc-if>
+              </div>
+            </div>
+          </sc-if>
+
+          <!-- ===== CHAT ===== -->
+          <sc-if value="{{ secChat }}" hint-placeholder-val="{{ false }}">
+            <div data-screen-label="AI assistant" style="max-width: 880px; margin: 0 auto; height: 100%; display: flex; flex-direction: column; animation: wdfade 0.35s ease;">
+              <div style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; flex: 1; display: flex; flex-direction: column; min-height: 0; backdrop-filter: blur(12px); overflow: hidden;">
+                <div style="display: flex; align-items: center; gap: 12px; padding: 16px 24px; border-bottom: 1px solid rgba(255,255,255,0.07);">
+                  <div style="width: 34px; height: 34px; border-radius: 10px; background: linear-gradient(135deg, rgba(45,212,191,0.2), rgba(167,139,250,0.2)); border: 1px solid rgba(94,234,212,0.3); display: flex; align-items: center; justify-content: center;">
+                    <span class="material-icons" style="font-size: 18px; color: #5EEAD4;">auto_awesome</span>
+                  </div>
+                  <div>
+                    <div style="font-weight: 700; font-size: 15.5px;">AI assistant</div>
+                    <div style="font-size: 12px; color: rgba(231,236,244,0.5);">Answers only from this site's analysis data</div>
+                  </div>
+                </div>
+                <div data-wd-chat="1" style="flex: 1; overflow-y: auto; padding: 24px; display: flex; flex-direction: column; gap: 14px;">
+                  <sc-for list="{{ chatMsgs }}" as="cm" hint-placeholder-count="2">
+                    <div style="display: flex; justify-content: {{ cm.justify }};">
+                      <div style="max-width: 78%; background: {{ cm.bg }}; border: {{ cm.border }}; border-radius: {{ cm.radius }}; padding: 12px 16px; font-size: 13.5px; line-height: 1.7; white-space: pre-line; color: rgba(231,236,244,0.85);">{{ cm.text }}</div>
+                    </div>
+                  </sc-for>
+                  <sc-if value="{{ chatTyping }}" hint-placeholder-val="{{ false }}">
+                    <div style="display: flex;">
+                      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px 14px 14px 3px; padding: 14px 18px; display: flex; gap: 5px;">
+                        <span style="width: 6px; height: 6px; border-radius: 50%; background: #5EEAD4; animation: wdblink 1s infinite;"></span>
+                        <span style="width: 6px; height: 6px; border-radius: 50%; background: #5EEAD4; animation: wdblink 1s infinite 0.2s;"></span>
+                        <span style="width: 6px; height: 6px; border-radius: 50%; background: #5EEAD4; animation: wdblink 1s infinite 0.4s;"></span>
+                      </div>
+                    </div>
+                  </sc-if>
+                </div>
+                <div style="padding: 14px 24px 18px; border-top: 1px solid rgba(255,255,255,0.07);">
+                  <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+                    <sc-for list="{{ chatSugs }}" as="cs" hint-placeholder-count="4">
+                      <button sc-camel-on-click="{{ cs.onClick }}" style="border: 1px solid rgba(94,234,212,0.25); background: rgba(45,212,191,0.06); border-radius: 999px; padding: 6px 14px; font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; color: #5EEAD4; cursor: pointer; transition: all 0.2s ease;" style-hover="background: rgba(45,212,191,0.14);">{{ cs.label }}</button>
+                    </sc-for>
+                  </div>
+                  <div style="display: flex; gap: 10px;">
+                    <div style="flex: 1; display: flex; align-items: center; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 0 18px;">
+                      <input value="{{ chatInput }}" sc-camel-on-change="{{ onChatInput }}" sc-camel-on-key-down="{{ onChatKey }}" placeholder="Ask about this website…" style="flex: 1; border: none; outline: none; font-family: 'Space Grotesk', sans-serif; font-size: 14px; padding: 12px 0; background: transparent; color: #E7ECF4; min-width: 0;">
+                    </div>
+                    <button sc-camel-on-click="{{ sendChat }}" style="border: none; background: linear-gradient(120deg, #2DD4BF, #3B82F6); color: #04110D; border-radius: 999px; padding: 0 24px; font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 7px; box-shadow: 0 6px 20px rgba(45,212,191,0.25);" style-hover="filter: brightness(1.12);">
+                      <span class="material-icons" style="font-size: 17px;">send</span>Send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+
+    <!-- Issue drawer -->
+    <sc-if value="{{ hasActive }}" hint-placeholder-val="{{ false }}">
+      <div sc-camel-on-click="{{ closeDrawer }}" style="position: fixed; inset: 0; background: rgba(2,4,9,0.7); backdrop-filter: blur(3px); z-index: 40;"></div>
+      <div data-wd-drawer="1" style="position: fixed; top: 12px; right: 12px; bottom: 12px; width: 490px; background: rgba(13,18,32,0.97); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; z-index: 41; box-shadow: 0 40px 120px rgba(0,0,0,0.7); display: flex; flex-direction: column; animation: wdslide 0.28s ease; overflow: hidden;">
+        <div style="padding: 22px 26px; border-bottom: 1px solid rgba(255,255,255,0.07); display: flex; align-items: flex-start; gap: 12px;">
+          <div style="flex: 1;">
+            <div style="display: flex; gap: 9px; align-items: center;">
+              <span style="display: inline-flex; background: {{ activeSevBg }}; border: 1px solid {{ activeSevBorder }}; color: {{ activeSevText }}; border-radius: 999px; padding: 3px 11px; font-size: 11px; font-weight: 700;">{{ activeSevLabel }}</span>
+              <span style="font-size: 12px; color: rgba(231,236,244,0.5); font-family: 'JetBrains Mono', monospace;">{{ activeCat }} · {{ activePage }}</span>
+            </div>
+            <h3 style="margin: 12px 0 0; font-size: 19px; font-weight: 700; line-height: 1.35; letter-spacing: -0.3px;">{{ activeTitle }}</h3>
+          </div>
+          <button sc-camel-on-click="{{ closeDrawer }}" aria-label="Close" style="border: 1px solid rgba(255,255,255,0.12); background: transparent; color: rgba(231,236,244,0.6); border-radius: 50%; width: 34px; height: 34px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" style-hover="border-color: rgba(255,255,255,0.3); color: #E7ECF4;"><span class="material-icons" style="font-size: 18px;">close</span></button>
+        </div>
+        <div style="flex: 1; overflow-y: auto; padding: 22px 26px; display: flex; flex-direction: column; gap: 22px;">
+          <div>
+            <div style="font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(231,236,244,0.4);">What we found</div>
+            <p style="margin: 9px 0 0; font-size: 13.5px; line-height: 1.7; color: rgba(231,236,244,0.8); text-wrap: pretty;">{{ activeDesc }}</p>
+          </div>
+          <div style="background: rgba(251,191,36,0.07); border: 1px solid rgba(251,191,36,0.2); border-radius: 14px; padding: 16px 18px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="material-icons-outlined" style="font-size: 17px; color: #FBBF24;">trending_down</span>
+              <span style="font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #FCD34D;">Business impact</span>
+            </div>
+            <p style="margin: 9px 0 0; font-size: 13px; line-height: 1.65; color: rgba(252,211,77,0.85); text-wrap: pretty;">{{ activeImpact }}</p>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="material-icons" style="font-size: 17px; color: #5EEAD4;">auto_fix_high</span>
+              <span style="font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(231,236,244,0.4);">Recommended fix</span>
+            </div>
+            <p style="margin: 9px 0 0; font-size: 13.5px; line-height: 1.7; color: rgba(231,236,244,0.8); text-wrap: pretty;">{{ activeFix }}</p>
+            <sc-if value="{{ activeHasCode }}" hint-placeholder-val="{{ false }}">
+              <pre style="margin: 12px 0 0; background: rgba(2,4,9,0.8); border: 1px solid rgba(94,234,212,0.15); color: #99F6E4; border-radius: 12px; padding: 16px 18px; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.75; overflow-x: auto; white-space: pre;">{{ activeCode }}</pre>
+            </sc-if>
+          </div>
+          <div style="display: flex; gap: 18px; font-size: 12px; color: rgba(231,236,244,0.5);">
+            <span style="display: inline-flex; align-items: center; gap: 6px;"><span class="material-icons-outlined" style="font-size: 16px;">construction</span>Effort: {{ activeEffort }}</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace;"><span class="material-icons-outlined" style="font-size: 16px;">rule</span>{{ activeRule }}</span>
+          </div>
+        </div>
+        <div style="padding: 16px 26px; border-top: 1px solid rgba(255,255,255,0.07); display: flex; gap: 10px;">
+          <sc-if value="{{ activeHasCode }}" hint-placeholder-val="{{ false }}">
+            <button sc-camel-on-click="{{ copyFix }}" style="border: 1px solid rgba(255,255,255,0.15); background: transparent; color: rgba(231,236,244,0.8); border-radius: 999px; padding: 9px 18px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 7px;" style-hover="border-color: rgba(94,234,212,0.4); color: #5EEAD4;"><span class="material-icons-outlined" style="font-size: 16px;">content_copy</span>Copy fix</button>
+          </sc-if>
+          <div style="flex: 1;"></div>
+          <button sc-camel-on-click="{{ toggleResolved }}" style="border: none; background: {{ resolveBg }}; color: {{ resolveTextC }}; border-radius: 999px; padding: 10px 22px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 7px; box-shadow: {{ resolveShadow }};" style-hover="filter: brightness(1.1);"><span class="material-icons" style="font-size: 16px;">{{ resolveIcon }}</span>{{ resolveLabel }}</button>
+        </div>
+      </div>
+    </sc-if>
+  </sc-if>
+
+  <!-- Toast -->
+  <sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); background: rgba(13,18,32,0.95); border: 1px solid rgba(94,234,212,0.3); color: #E7ECF4; border-radius: 999px; padding: 11px 24px; font-size: 13px; font-weight: 600; box-shadow: 0 16px 50px rgba(0,0,0,0.6); z-index: 60; animation: wdfade 0.2s ease; display: flex; align-items: center; gap: 9px;">
+      <span class="material-icons" style="font-size: 16px; color: #5EEAD4;">check_circle</span>{{ toast }}
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;startView&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;start&quot;, &quot;projects&quot;, &quot;analyzing&quot;, &quot;dashboard&quot;], &quot;default&quot;: &quot;start&quot;, &quot;tsType&quot;: &quot;'start' | 'projects' | 'analyzing' | 'dashboard'&quot;, &quot;section&quot;: &quot;Demo&quot;}, &quot;crawlSpeed&quot;: {&quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 1, &quot;min&quot;: 0.5, &quot;max&quot;: 4, &quot;step&quot;: 0.5, &quot;unit&quot;: &quot;x&quot;, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Demo&quot;}}">
+class Component extends DCLogic {
+  state = { view: null, url: '', scanUrl: 'grandmeridianhotel.com', stageIdx: -1, logs: [], section: 'overview', activeId: null, resolved: {}, filterQ: '', filterCat: 'All categories', filterSev: 'All severities', statusTab: 0, chat: [], chatInput: '', chatTyping: false, toast: null, checkCat: 0, checkQ: '', checkSev: 'All severities', checkStatus: 'All', activeSite: 'grandmeridianhotel.com', sites: [{ domain: 'grandmeridianhotel.com', name: 'The Grand Meridian Hotel', health: 68, pages: 8, issues: 23, critical: 4, scanned: '17 Jul 2026, 09:42' }] };
+
+  KNOWN_NAMES = { 'grandmeridianhotel.com': 'The Grand Meridian Hotel', 'thepalmresort.in': 'The Palm Resort' };
+
+  healthMeta(h) {
+    return h >= 75 ? { label: 'Good shape', color: '#34D399', glow: 'rgba(52,211,153,0.5)', bg: 'rgba(52,211,153,0.1)', border: 'rgba(52,211,153,0.3)', text: '#6EE7B7' }
+      : h >= 60 ? { label: 'Needs attention', color: '#FBBF24', glow: 'rgba(251,191,36,0.5)', bg: 'rgba(251,191,36,0.1)', border: 'rgba(251,191,36,0.3)', text: '#FCD34D' }
+      : { label: 'At risk', color: '#FB7185', glow: 'rgba(251,113,133,0.5)', bg: 'rgba(251,113,133,0.1)', border: 'rgba(251,113,133,0.3)', text: '#FDA4AF' };
+  }
+
+  SEV = {
+    critical: { label: 'Critical', main: '#FB7185', bg: 'rgba(251,113,133,0.1)', border: 'rgba(251,113,133,0.35)', text: '#FDA4AF' },
+    high: { label: 'High', main: '#FBBF24', bg: 'rgba(251,191,36,0.1)', border: 'rgba(251,191,36,0.35)', text: '#FCD34D' },
+    medium: { label: 'Medium', main: '#38BDF8', bg: 'rgba(56,189,248,0.1)', border: 'rgba(56,189,248,0.35)', text: '#7DD3FC' },
+    low: { label: 'Low', main: '#94A3B8', bg: 'rgba(148,163,184,0.1)', border: 'rgba(148,163,184,0.3)', text: '#CBD5E1' }
+  };
+
+  STAGES = [
+    { name: 'Crawl website', icon: 'travel_explore', detail: 'Opening pages, waiting for network idle', logs: ['GET / → 200 (1.8s)', 'GET /rooms → 200 (1.2s)'] },
+    { name: 'Discover pages', icon: 'account_tree', detail: 'Following internal links, deduplicating URLs', logs: ['found 8 internal pages', 'skipped 12 external links'] },
+    { name: 'Capture screenshots', icon: 'photo_camera', detail: 'Full-page captures at 1440px', logs: ['screenshot /gallery (2.4 MB)', 'screenshot /contact (0.9 MB)'] },
+    { name: 'Extract HTML & metadata', icon: 'code', detail: 'Titles, meta, headings, images, forms, schema', logs: ['parsed 8 documents with cheerio', 'extracted 214 images, 6 forms'] },
+    { name: 'Lighthouse audit', icon: 'speed', detail: 'Performance, SEO, best practices per page', logs: ['/ perf 52 · LCP 6.8s · CLS 0.02', '/gallery perf 41 · LCP 5.9s'] },
+    { name: 'Accessibility scan', icon: 'accessibility_new', detail: 'axe-core: ARIA, labels, contrast, keyboard', logs: ['24 img elements missing alt on /gallery', 'form inputs missing labels on /rooms'] },
+    { name: 'Security headers & TLS', icon: 'https', detail: 'CSP, HSTS, cookies, certificate, TLS version', logs: ['CSP + HSTS missing on all pages', 'TLS 1.3 · cert valid for 71 days'] },
+    { name: 'Code validation', icon: 'data_object', detail: 'W3C HTML/CSS, console errors, library CVEs', logs: ['W3C: 14 HTML errors on /rooms', 'console: 3 JS errors on /gallery · jQuery 2.2.4 CVE'] },
+    { name: 'Search Console sync', icon: 'query_stats', detail: 'Importing 90-day impressions and clicks', logs: ['imported 90d impressions for 8 pages', '2 clicked URLs redirect or 404'] },
+    { name: 'Rule engine', icon: 'rule', detail: 'Running 331 checks across 19 categories', logs: ['331 checks executed', '23 failed · 287 passed · 21 warnings'] },
+    { name: 'AI vision review', icon: 'visibility', detail: 'Senior-UX review of every screenshot', logs: ['vision: CTA contrast flagged on /', 'vision: inconsistent buttons across pages'] },
+    { name: 'AI HTML review', icon: 'psychology', detail: 'Frontend-QA review of markup and metadata', logs: ['html: duplicate titles on 3 pages', 'html: missing meta description on /'] },
+    { name: 'Cross-page consistency', icon: 'compare', detail: 'Header, footer, buttons, CTA wording', logs: ['4 primary button styles detected', 'footer link order differs on /contact'] },
+    { name: 'Generate fixes', icon: 'auto_fix_high', detail: 'Drafting code and copy for each issue', logs: ['generated 20 fixes (14 with code)', 'suggested meta description for /'] },
+    { name: 'Calculate scores', icon: 'calculate', detail: 'Weighing issues into category scores', logs: ['health 68 · SEO 72 · perf 58', 'report ready'] }
+  ];
+
+  ISSUES = [
+    { id: 'i1', sev: 'critical', cat: 'Performance', page: '/', title: 'Hero image is 4.2 MB and uncompressed', desc: 'The homepage hero (hero-lobby.jpg) ships as a 4.2 MB JPEG at 5760×3240 but renders at 1440×810. It is the LCP element and takes 6.8 s to paint on a 4G connection.', impact: 'Every extra second of load costs roughly 7% of conversions. At 6.8 s LCP, most mobile visitors see a blank hero for 5+ seconds — many bounce before the booking widget appears.', fix: 'Serve a responsive, modern-format image sized to the rendered dimensions and preload it.', code: '<link rel="preload" as="image" href="hero-lobby.avif">\n<img src="hero-lobby.avif"\n     srcset="hero-800.avif 800w, hero-1440.avif 1440w"\n     sizes="100vw" width="1440" height="810"\n     fetchpriority="high" alt="Lobby of the Grand Meridian">', effort: 'Low', rule: 'perf/oversized-images' },
+    { id: 'i2', sev: 'critical', cat: 'Accessibility', page: '/rooms', title: 'Booking form inputs have no labels', desc: 'The check-in date, check-out date and guests fields rely on placeholder text only. axe-core flags all three with "form elements must have labels" (critical).', impact: 'Screen-reader users cannot complete a booking — a direct revenue loss and an ADA/EAA compliance risk for hospitality sites.', fix: 'Associate a visible or visually-hidden label with each input.', code: '<label for="checkin">Check-in date</label>\n<input id="checkin" type="date" name="checkin" required>\n\n<label for="guests">Guests</label>\n<select id="guests" name="guests">…</select>', effort: 'Low', rule: 'a11y/label' },
+    { id: 'i3', sev: 'critical', cat: 'SEO', page: '3 pages', title: 'Duplicate title tag on 3 pages', desc: '/rooms, /dining and /spa all use the identical title "The Grand Meridian Hotel". Search engines cannot tell the pages apart and may pick one to index.', impact: 'The rooms and dining pages are your highest-intent landing pages; duplicate titles suppress their rankings for "suites", "restaurant" and "spa" queries.', fix: 'Give each page a unique, descriptive title under 60 characters.', code: '<!-- /rooms -->\n<title>Rooms & Suites | The Grand Meridian Hotel</title>\n<!-- /dining -->\n<title>Fine Dining & Rooftop Bar | The Grand Meridian</title>\n<!-- /spa -->\n<title>Spa & Wellness | The Grand Meridian Hotel</title>', effort: 'Low', rule: 'seo/title-unique' },
+    { id: 'i22', sev: 'critical', cat: 'Security', page: 'Site-wide', title: 'jQuery 2.2.4 with known CVEs in production', desc: 'All pages load jQuery 2.2.4 (released 2016). It carries publicly known XSS vulnerabilities (CVE-2019-11358, CVE-2020-11022/11023) fixed in 3.5+. The booking widget depends on it.', impact: 'A known-vulnerable library on a site that handles booking and guest data is a real XSS attack surface and a PCI-DSS compliance red flag.', fix: 'Upgrade to jQuery 3.7 (drop-in for this usage) and add Subresource Integrity so the CDN copy cannot be tampered with.', code: '<scr' + 'ipt src="https://code.jquery.com/jquery-3.7.1.min.js"\n        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="\n        crossorigin="anonymous"></scr' + 'ipt>', effort: 'Low', rule: 'code/vulnerable-library' },
+    { id: 'i4', sev: 'high', cat: 'SEO', page: '/', title: 'Missing meta description on homepage', desc: 'The homepage has no meta description. Search engines generate an arbitrary snippet from page text — currently the cookie-banner copy.', impact: 'The search snippet is your ad copy on Google. A missing description measurably lowers click-through from search results.', fix: 'Add a compelling 150–160 character description.', code: '<meta name="description" content="5-star boutique hotel in the\nheart of the city. 94 rooms & suites, rooftop dining, full-service\nspa. Best rate guaranteed when you book direct.">', effort: 'Low', rule: 'seo/meta-description' },
+    { id: 'i5', sev: 'high', cat: 'Conversion', page: 'All pages', title: '"Book now" button fails contrast (2.9:1)', desc: 'The primary CTA renders gold (#C9A96A) text on white, a 2.9:1 ratio — below the 4.5:1 WCAG AA threshold. AI vision review also rated the button "easy to miss" on 6 of 8 screenshots.', impact: 'Your single most important button is hard to see for low-vision users and visually weak for everyone. This directly suppresses booking starts.', fix: 'Use a filled button with accessible contrast; keep gold as an accent.', code: '.btn-book {\n  background: #8A6D3B;   /* 4.6:1 on white */\n  color: #ffffff;\n  border-radius: 4px;\n  padding: 12px 28px;\n}', effort: 'Low', rule: 'a11y/contrast + ai/vision' },
+    { id: 'i6', sev: 'high', cat: 'Accessibility', page: '/gallery', title: '24 images missing alt text', desc: 'All 24 gallery images have empty or missing alt attributes. They are meaningful content (rooms, restaurant, spa), not decoration.', impact: 'Screen-reader users get nothing from your most visual page, and Google Images cannot index the photos — a lost discovery channel for hotels.', fix: 'Add descriptive alt text to each image; AI has drafted all 24.', code: '<img src="suite-royal.jpg"\n     alt="Royal suite with king bed and skyline view">\n<img src="pool-night.jpg"\n     alt="Rooftop infinity pool lit at night">', effort: 'Medium', rule: 'a11y/image-alt' },
+    { id: 'i7', sev: 'high', cat: 'Performance', page: 'All pages', title: 'Render-blocking CSS delays first paint', desc: 'Three stylesheets (312 KB total, including an unused carousel library) load synchronously in <head>, blocking first paint by ~1.9 s.', impact: 'Visitors stare at a white screen. First impressions of a 5-star hotel should not be a blank page.', fix: 'Inline critical CSS and defer the rest; drop the unused carousel styles.', code: '<link rel="preload" href="main.css" as="style"\n      onload="this.onload=null;this.rel=\'stylesheet\'">\n<noscript><link rel="stylesheet" href="main.css"></noscript>', effort: 'Medium', rule: 'perf/render-blocking' },
+    { id: 'i8', sev: 'high', cat: 'Navigation', page: '/events', title: '3 broken internal links', desc: '/events links to /weddings-2024, /meetings.html and /celebrate — all return 404. The pages were renamed in a redesign.', impact: 'Event planners hitting 404s mid-research are unlikely to submit an RFP. Broken links also waste crawl budget and erode search trust.', fix: 'Update the links or add 301 redirects from the old URLs.', code: '# .htaccess\nRedirect 301 /weddings-2024 /weddings\nRedirect 301 /meetings.html /meetings\nRedirect 301 /celebrate /events', effort: 'Low', rule: 'nav/broken-links' },
+    { id: 'i9', sev: 'high', cat: 'SEO', page: 'Site-wide', title: 'No XML sitemap found', desc: 'Neither /sitemap.xml nor a Sitemap: entry in robots.txt exists. Deeper pages (/offers, /spa) rely on link discovery alone.', impact: 'New offers pages can take weeks to be indexed — promotions may expire before Google ever shows them.', fix: 'Generate a sitemap and reference it from robots.txt.', code: '# robots.txt\nUser-agent: *\nAllow: /\nSitemap: https://grandmeridianhotel.com/sitemap.xml', effort: 'Low', rule: 'seo/sitemap' },
+    { id: 'i21', sev: 'high', cat: 'Security', page: 'Site-wide', title: 'CSP and HSTS security headers missing', desc: 'No Content-Security-Policy or Strict-Transport-Security header on any response. Cookies are also set without the Secure flag.', impact: 'Without CSP, any injected script runs unrestricted; without HSTS, first visits can be silently downgraded to HTTP. Both are table stakes for a site handling guest data.', fix: 'Add both headers at the web-server level; roll out CSP in report-only mode first.', code: '# nginx\nadd_header Strict-Transport-Security\n  "max-age=31536000; includeSubDomains" always;\nadd_header Content-Security-Policy\n  "default-src \'self\'; img-src \'self\' data:;\n   script-src \'self\' https://www.googletagmanager.com" always;', effort: 'Medium', rule: 'security/headers' },
+    { id: 'i23', sev: 'high', cat: 'Code quality', page: '/gallery +1', title: 'JavaScript errors in console on 2 pages', desc: '/gallery throws 3 uncaught TypeErrors from the lightbox after lazy images load; /events logs an unhandled promise rejection from the RFP form validator.', impact: 'The gallery lightbox silently stops working after the first error — visitors cannot open full-size photos on your most visual page.', fix: 'Initialize the lightbox only after images resolve, and catch the validator promise.', code: "document.addEventListener('DOMContentLoaded', () => {\n  if (window.Lightbox) Lightbox.init({ lazy: true });\n});\nvalidateRfp(data).catch(err => showFormError(err));", effort: 'Medium', rule: 'code/console-errors' },
+    { id: 'i10', sev: 'medium', cat: 'Content', page: '/spa', title: 'Placeholder "lorem ipsum" text in production', desc: 'The second treatment card on /spa still contains "Lorem ipsum dolor sit amet…" — leftover template copy.', impact: 'Placeholder text on a live 5-star hotel page reads as unfinished and undermines trust in the whole site.', fix: 'Replace with real treatment copy. AI drafted a starting point from your other spa descriptions.', code: null, effort: 'Low', rule: 'content/placeholder' },
+    { id: 'i11', sev: 'medium', cat: 'SEO', page: 'Site-wide', title: 'Open Graph tags missing', desc: 'No og:title, og:description or og:image on any page. Links shared on WhatsApp, Instagram or Facebook render as bare URLs.', impact: 'Hotel links are shared constantly in group chats while planning trips. A bare URL gets fewer taps than a rich card with your best photo.', fix: 'Add Open Graph and Twitter card tags to every page.', code: '<meta property="og:title" content="The Grand Meridian Hotel">\n<meta property="og:description" content="5-star boutique hotel…">\n<meta property="og:image" content="https://…/og-hero.jpg">\n<meta name="twitter:card" content="summary_large_image">', effort: 'Low', rule: 'seo/open-graph' },
+    { id: 'i12', sev: 'medium', cat: 'UX', page: 'Cross-page', title: '4 different primary button styles', desc: 'Cross-page analysis found four visually distinct primary buttons: gold outline (home), solid navy (rooms), rounded green (offers) and underlined text (contact).', impact: 'Inconsistent CTAs make the site feel stitched together and force users to re-learn what is clickable on every page.', fix: 'Standardize on one primary and one secondary button style in a shared stylesheet.', code: null, effort: 'Medium', rule: 'ai/cross-page' },
+    { id: 'i13', sev: 'medium', cat: 'Performance', page: 'All pages', title: 'Web fonts load without preload', desc: 'Two font families (4 weights, 380 KB) load late in the waterfall, causing a visible flash of fallback text on every page.', impact: 'The typography flash cheapens the visual first impression and contributes ~300 ms to perceived load.', fix: 'Preload the two critical WOFF2 files and set font-display: swap.', code: '<link rel="preload" href="/fonts/canela.woff2"\n      as="font" type="font/woff2" crossorigin>', effort: 'Low', rule: 'perf/font-loading' },
+    { id: 'i14', sev: 'medium', cat: 'Tracking', page: '3 pages', title: 'GA4 tag missing on 3 pages', desc: 'The GA4 snippet is absent from /offers, /gallery and /contact — likely pages built after the analytics setup.', impact: 'You cannot see which offers convert or attribute bookings that start on these pages. Marketing decisions are running on partial data.', fix: 'Move the GA4 snippet into the shared layout template instead of per-page includes.', code: null, effort: 'Low', rule: 'track/ga4-coverage' },
+    { id: 'i15', sev: 'medium', cat: 'Forms', page: '/contact', title: 'Required fields lack required attribute', desc: 'Name and email on the contact form are validated only server-side. Users discover errors after submitting and lose their message on reload.', impact: 'Every failed submission is a lead that may not retry. Inline validation is table stakes for enquiry forms.', fix: 'Add native validation attributes.', code: '<input type="email" name="email" required\n       autocomplete="email">\n<input type="text" name="name" required\n       autocomplete="name">', effort: 'Low', rule: 'forms/required' },
+    { id: 'i16', sev: 'medium', cat: 'Performance', page: '/gallery', title: 'Below-fold images not lazy-loaded', desc: 'All 24 gallery images load eagerly on page open — 18 MB transferred before the user scrolls.', impact: 'Mobile visitors on hotel Wi-Fi or roaming data pay for 18 MB up front; many give up before the grid renders.', fix: 'Add native lazy loading to below-fold images.', code: '<img src="pool-night.jpg" loading="lazy"\n     decoding="async" width="640" height="427"\n     alt="Rooftop infinity pool lit at night">', effort: 'Low', rule: 'perf/lazy-loading' },
+    { id: 'i17', sev: 'low', cat: 'SEO', page: 'Site-wide', title: 'Favicon missing touch-icon sizes', desc: 'Only a 16px favicon.ico is declared. No apple-touch-icon or 192/512px icons for Android home-screen shortcuts.', impact: 'Bookmarks and shared links show a blurry or generic icon — a small but visible brand polish gap.', fix: 'Add the standard icon set.', code: '<link rel="apple-touch-icon" sizes="180x180"\n      href="/apple-touch-icon.png">\n<link rel="icon" type="image/png" sizes="192x192"\n      href="/icon-192.png">', effort: 'Low', rule: 'seo/favicon' },
+    { id: 'i18', sev: 'low', cat: 'Content', page: '/offers', title: 'Duplicate H2 headings', desc: 'Two different offer cards both use the H2 "Special offer". Headings should describe their content uniquely.', impact: 'Minor SEO and screen-reader navigation friction; users skimming by heading cannot tell the offers apart.', fix: 'Rename to the actual offer names, e.g. "Stay 3, pay 2" and "Spa weekend package".', code: null, effort: 'Low', rule: 'content/duplicate-headings' },
+    { id: 'i19', sev: 'low', cat: 'UX', page: '/contact', title: 'Footer link order differs from other pages', desc: 'The footer on /contact lists links in a different order and omits the press page. All other pages share one footer.', impact: 'A small consistency crack — users who learned the footer layout elsewhere briefly get lost.', fix: 'Use the shared footer include on /contact as well.', code: null, effort: 'Low', rule: 'ai/cross-page' },
+    { id: 'i20', sev: 'low', cat: 'Accessibility', page: 'Site-wide', title: 'Focus outline suppressed globally', desc: 'A global rule *:focus { outline: none } removes all focus indicators. Keyboard users cannot see where they are.', impact: 'Keyboard navigation is effectively blind. Cheap to fix, meaningful for accessibility compliance.', fix: 'Replace the reset with a visible focus style.', code: ':focus-visible {\n  outline: 3px solid #5EEAD4;\n  outline-offset: 2px;\n}', effort: 'Low', rule: 'a11y/focus-visible' }
+  ];
+
+  SCORES = [
+    { label: 'SEO', icon: 'search', score: 72, sub: '5 issues found' },
+    { label: 'Accessibility', icon: 'accessibility_new', score: 61, sub: '3 issues found' },
+    { label: 'Performance', icon: 'speed', score: 58, sub: '4 issues found' },
+    { label: 'UX', icon: 'palette', score: 74, sub: '2 issues found' },
+    { label: 'Conversion', icon: 'trending_up', score: 66, sub: '1 issue found' },
+    { label: 'Best practices', icon: 'verified', score: 79, sub: '5 minor issues' }
+  ];
+
+  PAGES = [
+    { name: 'Home', path: '/', perf: 52, seo: 70, a11y: 68, lcp: '6.8s', cls: '0.02', issues: 5, mockIcon: 'hotel' },
+    { name: 'Rooms & Suites', path: '/rooms', perf: 61, seo: 64, a11y: 55, lcp: '3.9s', cls: '0.11', issues: 4, mockIcon: 'king_bed' },
+    { name: 'Dining', path: '/dining', perf: 66, seo: 75, a11y: 72, lcp: '3.1s', cls: '0.04', issues: 1, mockIcon: 'restaurant' },
+    { name: 'Spa & Wellness', path: '/spa', perf: 63, seo: 71, a11y: 70, lcp: '3.4s', cls: '0.03', issues: 2, mockIcon: 'spa' },
+    { name: 'Events', path: '/events', perf: 58, seo: 62, a11y: 74, lcp: '4.2s', cls: '0.06', issues: 3, mockIcon: 'celebration' },
+    { name: 'Gallery', path: '/gallery', perf: 41, seo: 58, a11y: 49, lcp: '5.9s', cls: '0.01', issues: 4, mockIcon: 'photo_library' },
+    { name: 'Offers', path: '/offers', perf: 64, seo: 60, a11y: 71, lcp: '3.3s', cls: '0.09', issues: 3, mockIcon: 'local_offer' },
+    { name: 'Contact', path: '/contact', perf: 69, seo: 73, a11y: 66, lcp: '2.8s', cls: '0.02', issues: 2, mockIcon: 'mail' }
+  ];
+
+  ANSWERS = [
+    { keys: ['slow', 'speed', 'lcp', 'homepage slow', 'performance'], text: 'The homepage is slow for three measurable reasons:\n\n1. The hero image is 4.2 MB and uncompressed — it is the LCP element and alone accounts for ~4 s of the 6.8 s LCP.\n2. Three render-blocking stylesheets (312 KB) delay first paint by ~1.9 s.\n3. Web fonts load without preload, adding ~300 ms of text flash.\n\nFixing just the hero image (issue #1) should bring LCP under 3 s. All three fixes are drafted in the issue drawer.' },
+    { keys: ['fix first', 'priorit', 'start', 'first'], text: 'Fix in this order — best impact for effort:\n\n1. Compress the hero image (Critical, ~1 h) — cuts LCP from 6.8 s to ~2.5 s.\n2. Label the booking form inputs (Critical, ~1 h) — unblocks screen-reader bookings and compliance.\n3. Unique title tags on /rooms, /dining, /spa (Critical, ~30 min) — recovers rankings on your highest-intent pages.\n\nThose three alone should lift the health score from 68 to roughly 80.' },
+    { keys: ['worst seo', 'seo'], text: 'Gallery has the worst SEO score (58). It combines three problems: 24 images with no alt text (invisible to image search), no unique meta description, and it is missing from internal navigation on 2 pages.\n\nSite-wide, the biggest SEO issues are the duplicate title tags (3 pages), the missing homepage meta description, and no XML sitemap.' },
+    { keys: ['accessib', 'a11y', 'wcag'], text: 'Three pages have serious accessibility problems:\n\n• /rooms (score 55) — booking form inputs have no labels (critical).\n• /gallery (score 49) — 24 images missing alt text.\n• Site-wide — focus outlines are suppressed, and the "Book now" button fails contrast at 2.9:1.\n\nThe form labels are the most urgent: they block the booking flow entirely for screen-reader users.' },
+    { keys: ['homepage improve', 'improve', 'home'], text: 'Top homepage improvements from the analysis:\n\n1. Replace the 4.2 MB hero with a compressed AVIF (issue #1).\n2. Restyle "Book now" with accessible contrast — AI vision rated it "easy to miss" (issue #5).\n3. Add a meta description to control your Google snippet (issue #4).\n4. Inline critical CSS to kill the 1.9 s blank-screen wait (issue #7).\n\nTogether these address speed, visibility and conversion on your most-visited page.' },
+    { keys: ['check', 'registry', 'coverage', '331', 'standard', 'validation', 'header', 'tls', 'security', 'mismatch', 'count'], text: 'The rule engine ran all 331 checks across 19 categories — indexability & crawl (53), content relevance (40), links (29), internal resources (24), hreflang (23), best practices & code review (19), HTML/CSS/JS validation (16), page speed (15), duplicate content (14), security headers & TLS (14), mobile friendly (12), redirects (11), code validation (10), accessibility/axe-core (10), security (10), XML sitemaps (9), search traffic (9), AI design review (8) and social media (5).\n\nResult: 287 passed · 21 warnings · 23 failed. Every failed check opens exactly one issue with the same severity, so the numbers match everywhere: 23 issues — 4 critical, 8 high, 7 medium, 4 low. Warnings are advisory and never create issues.' },
+    { keys: ['book', 'conversion', 'cta'], text: 'Conversion score is 66. The main finding: your primary "Book now" CTA fails contrast (2.9:1) and was rated "easy to miss" by AI vision on 6 of 8 pages. Cross-page analysis also found 4 different primary button styles, which dilutes CTA recognition.\n\nStandardizing on one high-contrast button style is the single best conversion fix.' }
+  ];
+
+  CHAT_SUGS = ['Why is the homepage slow?', 'What should I fix first?', 'Which page has the worst SEO?', 'Which pages have accessibility problems?'];
+
+  // 261-check registry (sitechecker-grade catalog). Format: 'severity|name' — C critical, W warning, O opportunity, N notice.
+  CHECKS = [
+    ['Indexability & Crawl', ['W|Canonical is missing','W|Noindex in HTML and HTTP header','W|Nofollow in HTML and HTTP header','O|H2 has other tags inside','O|H1 has other tags inside','N|Meta nofollow pages','N|Meta noindex pages','C|Canonical to non-200','C|Canonical is empty','C|Canonical from HTTP to HTTPS','C|Canonical from HTTPS to HTTP','C|Double slash in URL','C|Mismatched canonical tag in HTML and HTTP header','C|Noscript in head contains invalid HTML elements','C|Canonical outside of head','C|Canonical points to a disallowed URL','C|Canonical points to a noindex URL','C|Canonical points to another canonicalized URL','C|Canonicalized URL is noindex, nofollow','C|More than one <body> tag on page','C|More than one </body> tag on page','C|More than one </head> tag on page','C|More than one </html> tag on page','C|More than one <head> tag on page','C|More than one <html> tag on page','C|Page has content after </html>','C|</body> tag is missing','C|</head> tag is missing','C|</html> tag is missing','C|<head> tag is missing','C|<body> tag is missing','C|<html> tag is missing','C|Page has disallowed CSS files','C|Page has disallowed images','C|Page has disallowed JavaScript files','C|Page has no declared character encoding','C|Mismatched nofollow directives in HTML and header','C|Mismatched noindex directives in HTML and header','C|Page has content before <!doctype html>','W|Canonical is a relative URL','W|Meta robots found outside of <head>','W|Multiple base URLs','W|Multiple canonical tags','W|Multiple noindex directives','W|Multiple, mismatched base URLs','W|Base URL malformed or empty','N|Canonical ≠ URL','N|Disallowed by robots.txt','N|Noindex follow page','N|More than three parameters in URL','N|Page contains rel=sponsored attributes','N|Page contains a form with a GET method','N|Page has content-type other than text/html']],
+    ['Redirects', ['W|301 redirects','C|Redirect chains','C|Meta refresh redirect','C|Internal redirects from case normalization','C|Internal redirects from trailing slash mismatch','C|Internal URL redirect broken','C|Internal URL redirects back to itself','W|HTTPS to HTTP redirect','W|HTTP to HTTPS redirect','N|3xx other redirects','N|302 redirects']],
+    ['Localization & Hreflang', ['C|Page referenced for more than one language in hreflang','C|Mismatched hreflang and HTML lang declarations','C|Has conflicting incoming hreflang annotations','N|Hreflang annotation also x-default','N|Missing hreflang annotations','C|HTML lang attribute invalid','C|Hreflang annotation invalid','C|More than one page for same language in hreflang','C|Self-reference hreflang annotation missing','C|Hreflang to non-canonical','C|Has outgoing hreflang annotations using relative URLs','C|Has outgoing hreflang annotations to redirecting URLs','C|Invalid incoming hreflang annotations','C|Noindex URL has incoming hreflang','C|Missing reciprocal hreflang (no return-tag)','C|Has outgoing hreflang annotations to broken URLs','C|Has outgoing hreflang annotations to disallowed URLs','C|Has outgoing hreflang annotations to noindex URLs','C|Canonicalized URL has incoming hreflang','C|Disallowed URL has incoming hreflang','W|Hreflang defined but HTML lang missing','N|X-default hreflang annotation missing','N|Not all pages from hreflang group were crawled']],
+    ['Duplicate Content', ['C|Page has identical headings','O|Page has identical alt tags','O|H1 = Alt','C|Title duplicates','C|Canonical loop','C|Technically duplicate URLs','W|Canonical points to homepage','W|H1 = Description','O|Title = Alt','N|H1 = Title','N|More than one h1 on page','N|Canonical points to external URL','N|Canonical tag in HTML and HTTP header','N|Working protocol redirect: HTTP to HTTPS']],
+    ['Internal Resources', ['W|URL contains upper case characters','N|URL contains more than one Google Tag Manager code','N|URL contains no Google Tag Manager code','C|4xx client errors','C|5xx server errors','C|Timed out','C|HTTP URL contains a password input field','C|Has link with a URL referencing LocalHost or 127.0.0.1','C|Has link with a URL referencing a local or UNC file path','C|URL resolves under both HTTP and HTTPS','C|Page has broken CSS files','C|Page has broken images','C|Page has broken JavaScript files','W|Has a link with whitespace in href attribute','W|Page has empty src attributes','W|URL contains repetitive elements','W|URL contains non-ASCII characters','W|Query string contains a question mark','N|Long URLs','N|Query string contains sort parameters','N|Query string contains search or filter parameters','N|Query string contains repetitive parameters','N|Query string contains paginated parameters','N|Whitespace in URL']],
+    ['XML Sitemaps', ['C|XML sitemap is missing','C|4xx client errors in XML sitemaps','C|5xx server errors in XML sitemaps','C|Canonicalized URL in XML sitemaps','C|Disallowed URL in XML sitemaps','C|Noindex URL in XML sitemaps','W|3xx redirects in XML sitemaps','W|Timed out URL in XML sitemaps','N|URL in multiple XML sitemaps']],
+    ['Links', ['W|Page has an anchored image with no alt text','W|Broken jump link','W|Page has no outgoing links','O|Page has outbound internal links with one word anchor','O|Has an internal link with no anchor text','O|Page has less than 10 internal backlinks','N|Page has more than 2 links to internal page with the same anchor','N|Page has link with a URL in onclick attribute','N|Empty links "#"','C|Orphan URLs - only found via sitemap','C|Page has link to a non-HTTP protocol','C|Page has outgoing links with malformed href data','C|Page has more than 100 external links','W|URL receives both follow and nofollow internal links','W|Page has more than 100 identical internal links','W|Has a link with an empty href attribute','W|Has only one followed internal linking URL','W|Page has internal links to 3xx pages','W|Page has internal links to 4xx pages','W|Page has broken links to external websites','O|Page has more than 100 links before H1 tag','O|Page has internal backlinks with the same anchor','O|Page has incoming followed links that do not use descriptive anchor text','O|Page has one or more outgoing followed links with non descriptive anchor text','O|Links in the footer with a no-follow attribute','N|Page has nofollow outgoing internal links','N|HTTP page has internal links to HTTPS','N|Page has more than 100 internal links','N|Page only has nofollow incoming internal links']],
+    ['Code Validation', ['C|Google Tag Manager code in <body>','W|Page has <table> but has no <caption> attribute','W|Headings hierarchy is broken','N|Page has tags with style attributes','C|<html> tag is empty','C|Page has no declared <!doctype html>','C|PHP fatal error','W|Page contains different structured data formats','W|Page has <table> but has no <th> attribute','W|Page has identical HTML id attributes']],
+    ['Content Relevance', ['W|Missing alt text','W|H1 is empty','W|H2 is missing','W|H1 is missing','W|Description is empty','W|HTML lang attribute missing','W|Low word count','O|Page has no strong importance elements','O|Page has alt tags with one word','O|Page has no list markdown','O|Paragraphs are missing','N|Text to code ratio < 10%','N|Description too short','N|H1 too short','N|Description too long','C|Duplicate pages without canonical','C|More than one body tag on page','C|Title is empty','C|Title is missing','C|More than one title tag on page','C|Lorem Ipsum content on the live site','W|H1 duplicates','W|Description duplicates','W|Description is missing','W|More than one description tag on page','W|HTTPS page links to HTTP image','W|Page has not been updated more than 1 year','W|Author box with "Admin"','O|Page might have an outdated title','C|Broken images on page','N|Page code has less than 500 symbols','C|Non-HTML URLs','N|Title too long','N|Title too short','N|H1 too long','C|PDF files returned by crawler','N|Description = Title','N|H1 starts with a lowercase letter','N|H2 starts with a lowercase letter','N|Title starts with a lowercase letter']],
+    ['Mobile Friendly', ['W|Viewport <meta> tag is missing an initial-scale','W|Viewport <meta> tag has a maximum-scale set','W|Viewport <meta> tag prevents the user from scaling','C|Has one or more image-map <map> tags','C|Missing <viewport> meta tag in <head>','C|Multiple viewport <meta> tags were found in <head>','C|Unsupported browser plugins found','W|Viewport <meta> tag does not have a width set','W|Viewport <meta> tag has a minimum-scale set','W|Viewport <meta> tag has a specific width set','W|Viewport <meta> tag initial-scale is incorrect','N|Touch icons declared for all platforms']],
+    ['Page Speed & Performance', ['W|Add dimensions to images','W|Defer offscreen images','O|Serve images in next gen formats','O|Comments in code has more than 1000 symbols','C|Page size is over 4 MB','C|Serve static assets with an efficient cache policy','W|Image size is over 100 KB','W|CSS file size is over 15 KB','W|JavaScript file size is over 25 KB','W|Page size is over 2 MB','W|Avoid excessive DOM size','W|Avoid excessive DOM depth','W|Avoid excessive DOM width','O|Use video formats for animated content','W|Web fonts are preloaded']],
+    ['Security', ['N|Page has HTTP link to www.w3.org','C|HTTPS page has internal links to HTTP','C|HTTP URLs','C|HTTPS URL contains a form posting to HTTP','W|HTTPS page links to HTTP CSS','W|HTTPS page links to HTTP JavaScript','N|Page has HTTP link to ogp.me','N|Page has HTTP link to schema.org','N|Page requires CAPTCHA authentication method','N|No cookies are sent by the website']],
+    ['Social Media', ['N|Open Graph tags missing','N|Twitter card missing','W|Open Graph tags incomplete','W|Open Graph URL not matching canonical','W|Twitter card incomplete']],
+    ['Search Traffic', ['C|Page has 0 impressions','C|Non-indexable page that has at least 1 impression','C|Page is blocked by robots.txt and has at least 1 impression','C|4xx pages that have at least 1 click','C|Canonicalized pages that have at least 1 click','C|3xx pages that have at least 1 click','W|Page is not submitted to sitemap and has at least 1 impression','O|Page has at least 1 click','N|Orphan pages with impressions']],
+    ['HTML / CSS / JS Validation', ['C|HTML fails W3C validation with errors','W|HTML has W3C validation warnings','C|CSS fails to parse (syntax errors)','W|CSS contains invalid property values','W|CSS relies on vendor-prefix-only declarations','C|JavaScript runtime errors in console','W|JavaScript logs warnings in console','C|Uncaught promise rejections detected','W|Inline event handlers (onclick) in HTML','W|Document mixes HTML4/XHTML and HTML5 syntax','N|CSS !important used excessively','N|Unused CSS rules over 50%','N|Unminified CSS files','N|Unminified JavaScript files','W|Duplicate JavaScript libraries loaded','C|JavaScript library with known vulnerabilities (CVE)']],
+    ['Best Practices & Code Review', ['C|Deprecated browser APIs in use','W|document.write() used','W|Synchronous XHR on main thread','C|Mixed content (active) blocked by browser','W|Missing rel="noopener" on target="_blank" links','W|Permission (geolocation/notification) requested on page load','N|console.log statements left in production','W|Framework version 2+ majors behind','C|Known-vulnerable dependency in bundle','W|Source maps exposed in production','N|Inline scripts larger than 10 KB','W|Images served with wrong Content-Type','W|Charset declared after first 1024 bytes','N|HTML comments contain TODO or FIXME','W|Scroll/touch listeners not passive','N|More than 10 third-party script origins','W|localStorage used for sensitive data','C|API keys or secrets visible in page source','W|Form fields use native validation attributes']],
+    ['Security Headers & TLS', ['C|Content-Security-Policy header missing','W|CSP allows unsafe-inline','C|Strict-Transport-Security (HSTS) missing','W|X-Content-Type-Options: nosniff missing','W|X-Frame-Options / frame-ancestors missing','W|Referrer-Policy header missing','N|Permissions-Policy header missing','C|TLS certificate expires within 14 days','C|TLS version below 1.2 supported','W|Certificate chain incomplete','W|Cookies set without Secure flag','W|Cookies set without HttpOnly flag','N|Cookies without SameSite attribute','C|Server version leaked in headers (Server / X-Powered-By)']],
+    ['Accessibility (axe-core)', ['C|Form elements must have labels','C|Elements must meet minimum color contrast ratio','C|Focus indicator must be visible','W|ARIA attributes must be valid','W|Interactive elements must be keyboard reachable','W|Page must have a main landmark','N|Heading order should be semantically correct','W|Touch targets must be at least 44 by 44 px','N|Page should have a skip link','C|Video and audio must have captions']],
+    ['AI Design Review', ['C|Primary button styles consistent across pages','W|Footer structure consistent across pages','W|Header consistent across pages','W|CTA wording consistent across pages','N|Brand colors used consistently','N|Typography scale consistent','N|Spacing rhythm consistent','N|Imagery style consistent']]
+  ];
+  // failed checks on this scan → linked issue id. Strictly 1:1 — one failed check per issue, same severity.
+  CHECK_FAILS = { 'Image size is over 100 KB': 'i1', 'Form elements must have labels': 'i2', 'Title duplicates': 'i3', 'Description is missing': 'i4', 'Elements must meet minimum color contrast ratio': 'i5', 'Missing alt text': 'i6', 'CSS file size is over 15 KB': 'i7', '4xx client errors': 'i8', 'XML sitemap is missing': 'i9', 'Lorem Ipsum content on the live site': 'i10', 'Open Graph tags missing': 'i11', 'Primary button styles consistent across pages': 'i12', 'Web fonts are preloaded': 'i13', 'URL contains no Google Tag Manager code': 'i14', 'Form fields use native validation attributes': 'i15', 'Defer offscreen images': 'i16', 'Touch icons declared for all platforms': 'i17', 'Page has identical headings': 'i18', 'Footer structure consistent across pages': 'i19', 'Focus indicator must be visible': 'i20', 'Content-Security-Policy header missing': 'i21', 'JavaScript library with known vulnerabilities (CVE)': 'i22', 'JavaScript runtime errors in console': 'i23' };
+  CHECK_WARNS = ['Canonical ≠ URL', 'Long URLs', 'H1 = Title', 'Title too short', 'Low word count', '302 redirects', 'More than one h1 on page', 'Page has tags with style attributes', 'Viewport <meta> tag is missing an initial-scale', 'Page has not been updated more than 1 year', 'No cookies are sent by the website', 'Missing hreflang annotations', 'Missing rel="noopener" on target="_blank" links', 'X-Content-Type-Options: nosniff missing', 'Cookies set without Secure flag', 'Unminified JavaScript files', 'Serve images in next gen formats', 'Page size is over 2 MB', 'Page has internal links to 4xx pages', 'Twitter card missing', 'Strict-Transport-Security (HSTS) missing'];
+  CSEV = {
+    C: { label: 'Critical', color: '#FDA4AF', bg: 'rgba(251,113,133,0.1)', border: 'rgba(251,113,133,0.35)' },
+    W: { label: 'Warning', color: '#FCD34D', bg: 'rgba(251,191,36,0.1)', border: 'rgba(251,191,36,0.35)' },
+    O: { label: 'Opportunity', color: '#7DD3FC', bg: 'rgba(56,189,248,0.1)', border: 'rgba(56,189,248,0.35)' },
+    N: { label: 'Notice', color: '#CBD5E1', bg: 'rgba(148,163,184,0.1)', border: 'rgba(148,163,184,0.3)' }
+  };
+
+  TICKER = ['seo/title-unique', 'a11y/contrast', 'perf/oversized-images', 'seo/meta-description', 'a11y/image-alt', 'forms/required', 'nav/broken-links', 'perf/lazy-loading', 'seo/open-graph', 'track/ga4-coverage', 'content/placeholder', 'a11y/focus-visible', 'perf/render-blocking', 'seo/sitemap', 'ai/cross-page', 'a11y/label'];
+
+  componentDidMount() {
+    const v = this.props.startView ?? 'start';
+    if (v === 'analyzing') this.beginScan(this.state.scanUrl);
+    else if (v !== 'start') this.setState({ view: v });
+  }
+  componentDidUpdate(prevProps) {
+    if (prevProps && prevProps.startView !== this.props.startView) {
+      const v = this.props.startView ?? 'start';
+      this.clearTimers();
+      if (v === 'analyzing') this.beginScan(this.state.scanUrl);
+      else this.setState({ view: v, stageIdx: -1, logs: [] });
+    }
+    const log = document.querySelector('[data-wd-log]');
+    if (log) log.scrollTop = log.scrollHeight;
+    const chat = document.querySelector('[data-wd-chat]');
+    if (chat) chat.scrollTop = chat.scrollHeight;
+  }
+  componentWillUnmount() { this.clearTimers(); }
+  clearTimers() { if (this._t) clearInterval(this._t); if (this._d) clearTimeout(this._d); if (this._toast) clearTimeout(this._toast); }
+
+  beginScan(url) {
+    this.clearTimers();
+    const clean = (url || 'grandmeridianhotel.com').replace(/^https?:\/\//, '').replace(/\/$/, '') || 'grandmeridianhotel.com';
+    this.setState({ view: 'analyzing', scanUrl: clean, stageIdx: 0, logs: [] });
+    const speed = this.props.crawlSpeed ?? 1;
+    let tick = 0;
+    this._t = setInterval(() => {
+      tick++;
+      this.setState(s => {
+        const idx = Math.floor(tick / 2);
+        const stage = this.STAGES[Math.min(idx, this.STAGES.length - 1)];
+        const logLine = stage.logs[tick % 2];
+        const time = '09:' + String(42 + Math.floor(tick * 4 / 60)).padStart(2, '0') + ':' + String((tick * 4) % 60).padStart(2, '0');
+        const logs = logLine ? [...s.logs, { time, text: logLine, color: idx >= 5 && tick % 2 === 1 ? '#FCD34D' : 'rgba(231,236,244,0.75)' }] : s.logs;
+        return { stageIdx: Math.min(idx, this.STAGES.length - 1), logs };
+      });
+      if (tick >= this.STAGES.length * 2) {
+        clearInterval(this._t);
+        this.setState(s => ({ logs: [...s.logs, { time: '09:43:36', text: '✓ analysis complete — 23 issues, health 68', color: '#6EE7B7' }], stageIdx: this.STAGES.length }));
+        this._d = setTimeout(() => this.setState(st => {
+          const domain = st.scanUrl;
+          const exists = st.sites.find(x => x.domain === domain);
+          const health = domain === 'grandmeridianhotel.com' ? 68 : 58 + (domain.split('').reduce((a, c) => a + c.charCodeAt(0), 0) % 25);
+          const base = domain.split('.')[0];
+          const site = exists ? { ...exists, scanned: 'Just now' } : { domain, name: this.KNOWN_NAMES[domain] || base.charAt(0).toUpperCase() + base.slice(1), health, pages: 8, issues: 23, critical: 4, scanned: 'Just now' };
+          return { view: 'dashboard', section: 'overview', activeSite: domain, sites: exists ? st.sites.map(x => x.domain === domain ? site : x) : [...st.sites, site] };
+        }), 1100);
+      }
+    }, 850 / speed);
+  }
+
+  showToast(msg) {
+    this.setState({ toast: msg });
+    if (this._toast) clearTimeout(this._toast);
+    this._toast = setTimeout(() => this.setState({ toast: null }), 2600);
+  }
+
+  answerFor(q) {
+    const lq = q.toLowerCase();
+    for (const a of this.ANSWERS) if (a.keys.some(k => lq.includes(k))) return a.text;
+    return 'Based on the scan of ' + this.state.activeSite + ' (8 pages, 331 checks): health is 68/100 with 23 open issues — 4 critical, 8 high, 7 medium, 4 low. Performance (58) and Accessibility (61) are the weakest areas.\n\nTry asking: "What should I fix first?" or "Why is the homepage slow?"';
+  }
+
+  sendChatMsg(text) {
+    const t = (text || '').trim();
+    if (!t || this.state.chatTyping) return;
+    this.setState(s => ({ chat: [...s.chat, { role: 'user', text: t }], chatInput: '', chatTyping: true }));
+    setTimeout(() => {
+      this.setState(s => ({ chat: [...s.chat, { role: 'ai', text: this.answerFor(t) }], chatTyping: false }));
+    }, 1200);
+  }
+
+  scoreColor(v) { return v >= 75 ? '#34D399' : v >= 60 ? '#FBBF24' : '#FB7185'; }
+  scoreGlow(v) { return v >= 75 ? 'rgba(52,211,153,0.4)' : v >= 60 ? 'rgba(251,191,36,0.4)' : 'rgba(251,113,133,0.4)'; }
+  scoreSoft(v) { return v >= 75 ? { bg: 'rgba(52,211,153,0.1)', text: '#6EE7B7' } : v >= 60 ? { bg: 'rgba(251,191,36,0.1)', text: '#FCD34D' } : { bg: 'rgba(251,113,133,0.1)', text: '#FDA4AF' }; }
+
+  renderVals() {
+    const s = this.state;
+    const view = s.view ?? (this.props.startView ?? 'start');
+    const SEV = this.SEV;
+    const go = (sec) => () => this.setState({ section: sec, activeId: null });
+
+    const spinner = React.createElement('span', { className: 'material-icons', style: { color: '#5EEAD4', fontSize: 26, animation: 'wdspin 1.2s linear infinite', display: 'inline-block' } }, 'autorenew');
+    const idx = s.stageIdx;
+    const stages = this.STAGES.map((st, i) => {
+      const done = i < idx, active = i === idx;
+      return {
+        name: st.name, detail: st.detail, icon: st.icon, active,
+        bg: active ? 'rgba(45,212,191,0.07)' : 'transparent',
+        weight: active || done ? 600 : 400,
+        color: done ? 'rgba(231,236,244,0.55)' : active ? '#5EEAD4' : 'rgba(231,236,244,0.3)',
+        statusNode: done
+          ? React.createElement('span', { className: 'material-icons', style: { fontSize: 20, color: '#34D399' } }, 'check_circle')
+          : active
+            ? React.createElement('span', { className: 'material-icons', style: { fontSize: 20, color: '#5EEAD4', animation: 'wdspin 1.2s linear infinite', display: 'inline-block' } }, 'autorenew')
+            : React.createElement('span', { className: 'material-icons-outlined', style: { fontSize: 20, color: 'rgba(231,236,244,0.18)' } }, 'circle')
+      };
+    });
+    const nStages = this.STAGES.length;
+    const progressPct = Math.min(100, Math.round((idx / nStages) * 100));
+    const stageLabel = idx >= nStages ? 'Analysis complete — building your report' : idx >= 0 && idx < nStages ? 'Stage ' + (idx + 1) + ' of ' + nStages + ' · ' + this.STAGES[idx].name : '';
+    const liveStats = [
+      { label: 'Pages found', value: String(Math.min(8, Math.max(0, Math.round((idx + 1) * 1.1)))) },
+      { label: 'Screenshots', value: String(idx >= 2 ? Math.min(8, (idx - 1) * 2) : 0) },
+      { label: 'Checks run', value: idx >= 9 ? '331' : '0' },
+      { label: 'AI reviews', value: idx >= 10 ? String(Math.min(16, (idx - 9) * 4)) : '0' }
+    ];
+
+    const resolved = s.resolved;
+    const sevOrder = { critical: 0, high: 1, medium: 2, low: 3 };
+    const openIssue = (id) => () => this.setState({ activeId: id });
+    const decorate = (i) => ({
+      title: i.title, cat: i.cat, page: i.page, desc: i.desc,
+      sevLabel: SEV[i.sev].label, sevBg: SEV[i.sev].bg, sevText: SEV[i.sev].text, sevBorder: SEV[i.sev].border,
+      onClick: openIssue(i.id),
+      opacity: resolved[i.id] ? 0.45 : 1,
+      status: resolved[i.id] ? 'Resolved' : 'Open',
+      statusColor: resolved[i.id] ? '#34D399' : 'rgba(231,236,244,0.5)',
+      statusIcon: resolved[i.id] ? 'check_circle' : 'radio_button_unchecked'
+    });
+
+    const q = s.filterQ.toLowerCase();
+    const filtered = this.ISSUES.filter(i =>
+      (!q || (i.title + i.page + i.cat + i.desc).toLowerCase().includes(q)) &&
+      (s.filterCat === 'All categories' || i.cat === s.filterCat) &&
+      (s.filterSev === 'All severities' || SEV[i.sev].label === s.filterSev) &&
+      (s.statusTab === 0 || (s.statusTab === 1 ? !resolved[i.id] : !!resolved[i.id]))
+    ).sort((a, b) => sevOrder[a.sev] - sevOrder[b.sev]);
+
+    const active = this.ISSUES.find(i => i.id === s.activeId);
+    const isRes = active && resolved[active.id];
+
+    const counts = { critical: 4, high: 8, medium: 7, low: 4 };
+    const C = 2 * Math.PI * 44;
+    let acc = 0;
+    const donutSegs = Object.keys(counts).map(k => {
+      const frac = counts[k] / 23;
+      const seg = { color: SEV[k].main, dash: Math.max(1, frac * C - 4) + ' ' + (C - frac * C + 4), offset: -acc * C };
+      acc += frac;
+      return seg;
+    });
+    const ringC = 2 * Math.PI * 62;
+    const cx = 130, cy = 106, R = 78;
+    const axesData = [['SEO', 72], ['A11y', 61], ['Perf', 58], ['UX', 74], ['Conv', 66], ['Best pr.', 79]];
+    const pt = (i, r) => { const a = (i * 60 - 90) * Math.PI / 180; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; };
+    const radarGrid = [0.33, 0.66, 1].map(f => axesData.map((_, i) => pt(i, R * f).map(n => n.toFixed(1)).join(',')).join(' '));
+    const radarAxes = axesData.map(([label], i) => { const [x, y] = pt(i, R); const [lx, ly] = pt(i, R + 18); return { x: x.toFixed(1), y: y.toFixed(1), lx: lx.toFixed(1), ly: (ly + 4).toFixed(1), label }; });
+    const radarDots = axesData.map(([, v], i) => { const [x, y] = pt(i, R * v / 100); return { x: x.toFixed(1), y: y.toFixed(1) }; });
+    const radarPoints = radarDots.map(d => d.x + ',' + d.y).join(' ');
+
+    const catCounts = [['SEO', 5], ['Performance', 4], ['Accessibility', 3], ['Security', 2], ['Content', 2], ['UX', 2], ['Conversion', 1], ['Navigation', 1], ['Tracking', 1], ['Code quality', 1], ['Forms', 1]];
+
+    const navItems = [
+      { id: 'overview', label: 'Overview', icon: 'dashboard' },
+      { id: 'issues', label: 'Issues', icon: 'bug_report', badge: '23', badgeBg: 'rgba(251,113,133,0.12)', badgeColor: '#FDA4AF' },
+      { id: 'checks', label: 'Check registry', icon: 'checklist', badge: '331', badgeBg: 'rgba(255,255,255,0.07)', badgeColor: 'rgba(231,236,244,0.7)' },
+      { id: 'pages', label: 'Pages', icon: 'web', badge: '8', badgeBg: 'rgba(255,255,255,0.07)', badgeColor: 'rgba(231,236,244,0.7)' },
+      { id: 'chat', label: 'AI assistant', icon: 'forum' }
+    ].map(n => ({
+      ...n, onClick: go(n.id),
+      bg: s.section === n.id ? 'rgba(45,212,191,0.08)' : 'transparent',
+      borderC: s.section === n.id ? 'rgba(94,234,212,0.25)' : 'transparent',
+      color: s.section === n.id ? '#5EEAD4' : 'rgba(231,236,244,0.75)',
+      iconColor: s.section === n.id ? '#5EEAD4' : 'rgba(231,236,244,0.45)',
+      weight: s.section === n.id ? 700 : 500
+    }));
+
+    const openCount = this.ISSUES.filter(i => !resolved[i.id]).length;
+
+    // check registry
+    const cq = s.checkQ.toLowerCase();
+    const cFiltersActive = !!(cq || s.checkSev !== 'All severities' || s.checkStatus !== 'All');
+    let totFail = 0, totWarn = 0, totAll = 0;
+    const allCats = this.CHECKS.map(([cname, list], ci) => {
+      const rowsAll = list.map(str => {
+        const p = str.indexOf('|');
+        const sev = str.slice(0, p), name = str.slice(p + 1);
+        const issueId = this.CHECK_FAILS.hasOwnProperty(name) ? this.CHECK_FAILS[name] : undefined;
+        const st = issueId !== undefined ? 'fail' : (this.CHECK_WARNS.includes(name) ? 'warn' : 'pass');
+        // failed rows display the linked issue's severity so counts match the Issues view 1:1
+        const iss = issueId ? this.ISSUES.find(ii => ii.id === issueId) : null;
+        const meta = iss ? { label: SEV[iss.sev].label, color: SEV[iss.sev].text, bg: SEV[iss.sev].bg, border: SEV[iss.sev].border } : { label: this.CSEV[sev].label, color: this.CSEV[sev].color, bg: this.CSEV[sev].bg, border: this.CSEV[sev].border };
+        return { name, sev, st, issueId, meta };
+      });
+      const failed = rowsAll.filter(r => r.st === 'fail').length;
+      const warns = rowsAll.filter(r => r.st === 'warn').length;
+      totFail += failed; totWarn += warns; totAll += list.length;
+      const rows = rowsAll.filter(r =>
+        (!cq || r.name.toLowerCase().includes(cq)) &&
+        (s.checkSev === 'All severities' || r.meta.label === s.checkSev) &&
+        (s.checkStatus === 'All' || (s.checkStatus === 'Failed' ? r.st === 'fail' : s.checkStatus === 'Warnings' ? r.st === 'warn' : r.st === 'pass'))
+      ).map(r => ({
+        name: r.name,
+        nameColor: r.st === 'fail' ? '#E7ECF4' : r.st === 'warn' ? 'rgba(231,236,244,0.85)' : 'rgba(231,236,244,0.55)',
+        sevLabel: r.meta.label, sevColor: r.meta.color, sevBg: r.meta.bg, sevBorder: r.meta.border,
+        statusIcon: r.st === 'fail' ? 'cancel' : r.st === 'warn' ? 'error' : 'check_circle',
+        statusColor: r.st === 'fail' ? '#FB7185' : r.st === 'warn' ? '#FBBF24' : 'rgba(52,211,153,0.75)',
+        hasIssue: !!r.issueId,
+        cursor: r.issueId ? 'pointer' : 'default',
+        onClick: r.issueId ? openIssue(r.issueId) : () => {}
+      }));
+      const expanded = cFiltersActive ? rows.length > 0 : s.checkCat === ci;
+      return {
+        name: cname, total: list.length, failed, warns,
+        passed: list.length - failed - warns,
+        hasFailed: failed > 0, hasWarns: warns > 0,
+        failedLabel: failed + ' failed',
+        warnsLabel: warns + (warns === 1 ? ' warning' : ' warnings'),
+        countLabel: (list.length - failed - warns) + '/' + list.length + ' passed',
+        pct: Math.round((list.length - failed) / list.length * 100) + '%',
+        barColor: failed > 0 ? '#FB7185' : warns > 0 ? '#FBBF24' : '#34D399',
+        chev: expanded ? 'expand_less' : 'expand_more',
+        onToggle: () => this.setState(st2 => ({ checkCat: st2.checkCat === ci ? -1 : ci })),
+        expanded,
+        rows: expanded ? rows : [],
+        visible: cFiltersActive ? rows.length > 0 : true
+      };
+    }).filter(c => c.visible);
+
+    return {
+      // check registry
+      secChecks: s.section === 'checks',
+      checkCats: allCats,
+      noChecks: allCats.length === 0,
+      checksSummary: [
+        { label: 'Passed', value: String(totAll - totFail - totWarn), color: '#34D399', sub: 'of ' + totAll + ' checks run' },
+        { label: 'Failed', value: String(totFail), color: '#FB7185', sub: '= 23 issues, same severity' },
+        { label: 'Warnings', value: String(totWarn), color: '#FBBF24', sub: 'advisory — no issues raised' },
+        { label: 'Categories', value: String(this.CHECKS.length), color: '#E7ECF4', sub: 'crawl to code review' }
+      ],
+      dataSources: [
+        { icon: 'query_stats', label: 'Search Console', status: 'Connected' },
+        { icon: 'https', label: 'TLS & headers', status: 'Fetched' },
+        { icon: 'data_object', label: 'W3C validators', status: 'Run' },
+        { icon: 'speed', label: 'Lighthouse 12.2', status: 'Run' },
+        { icon: 'accessibility_new', label: 'axe-core 4.10', status: 'Run' }
+      ],
+      checkQ: s.checkQ,
+      onCheckQ: (e) => this.setState({ checkQ: e.target.value }),
+      checkSev: s.checkSev,
+      onCheckSev: (e) => this.setState({ checkSev: e.target.value }),
+      checkSevOptions: ['All severities', 'Critical', 'High', 'Medium', 'Low', 'Warning', 'Opportunity', 'Notice'],
+      checkStatusTabs: ['All', 'Failed', 'Warnings', 'Passed'].map(label => ({
+        label, onClick: () => this.setState({ checkStatus: label }),
+        bg: s.checkStatus === label ? 'linear-gradient(120deg, rgba(45,212,191,0.25), rgba(59,130,246,0.25))' : 'transparent',
+        color: s.checkStatus === label ? '#5EEAD4' : 'rgba(231,236,244,0.55)'
+      })),
+      isStart: view === 'start', isAnalyzing: view === 'analyzing', isDash: view === 'dashboard', isProjects: view === 'projects',
+      goProjects: () => this.setState({ view: 'projects', activeId: null }),
+      goNewScan: () => this.setState({ view: 'start', url: '' }),
+      sitesCount: s.sites.length + (s.sites.length === 1 ? ' website monitored' : ' websites monitored'),
+      projects: s.sites.map(site2 => {
+        const hm2 = this.healthMeta(site2.health);
+        return {
+          domain: site2.domain, name: site2.name, health: site2.health,
+          healthColor: hm2.color, healthGlow: hm2.glow, healthLabel: hm2.label,
+          pctW: site2.health + '%',
+          pages: site2.pages + ' pages', issues: site2.issues + ' issues', critical: site2.critical + ' critical',
+          scanned: site2.scanned,
+          icon: site2.domain === 'grandmeridianhotel.com' ? 'hotel' : 'language',
+          onOpen: () => this.setState({ view: 'dashboard', activeSite: site2.domain, scanUrl: site2.domain, section: 'overview', activeId: null }),
+          onRescan: (e) => { e.stopPropagation(); this.beginScan(site2.domain); }
+        };
+      }),
+      url: s.url,
+      onUrl: (e) => this.setState({ url: e.target.value }),
+      onUrlKey: (e) => { if (e.key === 'Enter') this.beginScan(this.state.url); },
+      onAnalyze: () => this.beginScan(this.state.url),
+      samples: ['grandmeridianhotel.com', 'thepalmresort.in'].map(u => ({ label: u, onClick: () => { this.setState({ url: u }); this.beginScan(u); } })),
+      startSteps: [
+        { num: '01', icon: 'travel_explore', title: 'Crawl', sub: 'Up to 10 pages, screenshots and HTML captured', tint: '#5EEAD4' },
+        { num: '02', icon: 'rule', title: '331 checks', sub: '19 categories: SEO, crawl, code, a11y, headers, security', tint: '#60A5FA' },
+        { num: '03', icon: 'visibility', title: 'AI review', sub: 'Vision + HTML review of every page, cross-page too', tint: '#A78BFA' },
+        { num: '04', icon: 'auto_fix_high', title: 'Fixes', sub: 'Prioritized issues with ready-to-paste code', tint: '#F472B6' }
+      ],
+      tickerItems: [...this.TICKER, ...this.TICKER],
+      scanUrl: s.scanUrl, spinner, stages, progressPct, progressW: progressPct + '%', stageLabel, liveStats,
+      logs: s.logs,
+      cancelScan: () => { this.clearTimers(); this.setState({ view: 'projects', stageIdx: -1, logs: [] }); },
+      navItems,
+      secOverview: s.section === 'overview', secIssues: s.section === 'issues', secPages: s.section === 'pages', secChat: s.section === 'chat',
+      rescan: () => this.beginScan(s.scanUrl),
+      exportReport: () => this.showToast('Report queued — PDF will be ready in a moment'),
+      askAi: go('chat'),
+      goIssues: go('issues'),
+      ...(() => {
+        const site = s.sites.find(x => x.domain === s.activeSite) || s.sites[0];
+        const hm = this.healthMeta(site.health);
+        return {
+          ringDash: (ringC * site.health / 100).toFixed(1) + ' ' + ringC.toFixed(1),
+          siteHealth: site.health, healthColor: hm.color, healthGlow: hm.glow, healthLabel: hm.label,
+          healthChipBg: hm.bg, healthChipBorder: hm.border, healthChipText: hm.text,
+          siteDomain: site.domain, siteMeta: site.name + ' · ' + site.pages + ' pages crawled',
+          siteIcon: site.domain === 'grandmeridianhotel.com' ? 'hotel' : 'language',
+          siteScanned: 'SCAN: ' + site.scanned.toUpperCase()
+        };
+      })(),
+      sevChips: Object.keys(counts).map(k => ({ label: counts[k] + ' ' + SEV[k].label.toLowerCase(), bg: SEV[k].bg, borderC: SEV[k].border, text: SEV[k].text, dot: SEV[k].main })),
+      scoreCards: this.SCORES.map(c => ({ ...c, color: this.scoreColor(c.score), glow: this.scoreGlow(c.score), pct: c.score + '%' })),
+      radarGrid, radarAxes, radarDots, radarPoints,
+      radarLegend: (() => {
+        const vals = this.SCORES.map(c => c.score);
+        const mx = Math.max(...vals), mn = Math.min(...vals);
+        return this.SCORES.map(c => ({
+          label: c.label, score: c.score,
+          color: this.scoreColor(c.score), glow: this.scoreGlow(c.score),
+          tag: c.score === mn ? 'Lagging' : c.score === mx ? 'Leading' : null,
+          tagBg: c.score === mn ? 'rgba(251,113,133,0.1)' : 'rgba(52,211,153,0.1)',
+          tagBorder: c.score === mn ? 'rgba(251,113,133,0.35)' : 'rgba(52,211,153,0.35)',
+          tagColor: c.score === mn ? '#FDA4AF' : '#6EE7B7'
+        }));
+      })(),
+      donutSegs,
+      sevLegend: Object.keys(counts).map(k => ({ label: SEV[k].label, count: counts[k], color: SEV[k].main })),
+      catBars: catCounts.map(([label, count]) => ({ label, count, pct: (count / 5 * 100) + '%' })),
+      topIssues: this.ISSUES.slice(0, 5).map(decorate),
+      issueRows: filtered.map(decorate),
+      noIssues: filtered.length === 0,
+      filterSummary: openCount + ' open · ' + (23 - openCount) + ' resolved · one issue per failed check, severities match the registry',
+      filterQ: s.filterQ, filterCat: s.filterCat, filterSev: s.filterSev,
+      onSearch: (e) => this.setState({ filterQ: e.target.value }),
+      onCatSel: (e) => this.setState({ filterCat: e.target.value }),
+      onSevSel: (e) => this.setState({ filterSev: e.target.value }),
+      catOptions: ['All categories', 'SEO', 'Accessibility', 'Performance', 'Security', 'Code quality', 'UX', 'Conversion', 'Content', 'Forms', 'Tracking', 'Navigation'],
+      sevOptions: ['All severities', 'Critical', 'High', 'Medium', 'Low'],
+      statusTabs: ['All', 'Open', 'Resolved'].map((label, i) => ({
+        label, onClick: () => this.setState({ statusTab: i }),
+        bg: s.statusTab === i ? 'linear-gradient(120deg, rgba(45,212,191,0.25), rgba(59,130,246,0.25))' : 'transparent',
+        color: s.statusTab === i ? '#5EEAD4' : 'rgba(231,236,244,0.55)'
+      })),
+      hasFilters: !!(s.filterQ || s.filterCat !== 'All categories' || s.filterSev !== 'All severities'),
+      clearFilters: () => this.setState({ filterQ: '', filterCat: 'All categories', filterSev: 'All severities', statusTab: 0 }),
+      hasActive: !!active,
+      activeTitle: active ? active.title : '', activeDesc: active ? active.desc : '',
+      activeImpact: active ? active.impact : '', activeFix: active ? active.fix : '',
+      activeCode: active ? (active.code || '') : '', activeHasCode: !!(active && active.code),
+      activeCat: active ? active.cat : '', activePage: active ? active.page : '',
+      activeEffort: active ? active.effort : '', activeRule: active ? active.rule : '',
+      activeSevLabel: active ? SEV[active.sev].label : '', activeSevBg: active ? SEV[active.sev].bg : '', activeSevText: active ? SEV[active.sev].text : '', activeSevBorder: active ? SEV[active.sev].border : '',
+      closeDrawer: () => this.setState({ activeId: null }),
+      copyFix: () => { if (active && active.code && navigator.clipboard) navigator.clipboard.writeText(active.code); this.showToast('Fix copied to clipboard'); },
+      toggleResolved: () => { if (!active) return; this.setState(st => ({ resolved: { ...st.resolved, [active.id]: !st.resolved[active.id] } })); this.showToast(isRes ? 'Issue reopened' : 'Issue marked resolved'); },
+      resolveLabel: isRes ? 'Reopen issue' : 'Mark resolved',
+      resolveIcon: isRes ? 'undo' : 'check',
+      resolveBg: isRes ? 'rgba(255,255,255,0.1)' : 'linear-gradient(120deg, #34D399, #2DD4BF)',
+      resolveTextC: isRes ? '#E7ECF4' : '#04110D',
+      resolveShadow: isRes ? 'none' : '0 6px 20px rgba(52,211,153,0.3)',
+      pageCards: this.PAGES.map(p => {
+        const worst = Math.min(p.perf, p.seo, p.a11y);
+        return {
+          ...p,
+          heroTint: p.issues >= 4 ? 'rgba(251,113,133,0.12)' : 'rgba(255,255,255,0.06)',
+          issueBg: p.issues >= 4 ? 'rgba(251,113,133,0.12)' : p.issues >= 2 ? 'rgba(251,191,36,0.12)' : 'rgba(52,211,153,0.12)',
+          issueBorder: p.issues >= 4 ? 'rgba(251,113,133,0.35)' : p.issues >= 2 ? 'rgba(251,191,36,0.35)' : 'rgba(52,211,153,0.35)',
+          issueText: p.issues >= 4 ? '#FDA4AF' : p.issues >= 2 ? '#FCD34D' : '#6EE7B7',
+          minis: [['P', p.perf], ['S', p.seo], ['A', p.a11y]].map(([label, val]) => { const c = this.scoreSoft(val); return { label, val, bg: c.bg, text: c.text }; }),
+          onClick: () => this.setState({ section: 'issues', filterQ: p.path === '/' ? 'Home' : p.name.split(' ')[0], filterCat: 'All categories', filterSev: 'All severities', statusTab: 0 })
+        };
+      }),
+      chatMsgs: (s.chat.length ? s.chat : [{ role: 'ai', text: 'Hi — I have the full analysis of ' + s.activeSite + ' loaded: 8 pages, 331 checks across 19 categories, 23 failed checks = 23 issues.\n\nAsk me anything about the findings, or tap a suggestion below.' }]).map(m => ({
+        text: m.text,
+        justify: m.role === 'user' ? 'flex-end' : 'flex-start',
+        bg: m.role === 'user' ? 'rgba(59,130,246,0.14)' : 'rgba(255,255,255,0.04)',
+        border: m.role === 'user' ? '1px solid rgba(96,165,250,0.3)' : '1px solid rgba(255,255,255,0.1)',
+        radius: m.role === 'user' ? '14px 14px 3px 14px' : '14px 14px 14px 3px'
+      })),
+      chatTyping: s.chatTyping,
+      chatInput: s.chatInput,
+      onChatInput: (e) => this.setState({ chatInput: e.target.value }),
+      onChatKey: (e) => { if (e.key === 'Enter') this.sendChatMsg(this.state.chatInput); },
+      sendChat: () => this.sendChatMsg(s.chatInput),
+      chatSugs: this.CHAT_SUGS.map(t => ({ label: t, onClick: () => this.sendChatMsg(t) })),
+      toast: s.toast
+    };
+  }
+}
+</script>
+
+
+
+</body></html>
