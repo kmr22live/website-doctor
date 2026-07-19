@@ -92,9 +92,11 @@ reviews didn't run. Prompts live as files in `lib/ai/prompts/`, never hardcoded.
 
 ## Demo limits (and how to unlock full power)
 
-The hosted demo runs entirely on **free tiers** (server + Groq AI). To stay
-inside their rate limits, the demo scan is deliberately capped: AI vision
-review on 2 pages, Lighthouse on 5, and a 3-second gap between AI calls.
+The hosted demo runs entirely on **free tiers** (a 512MB server + Groq AI). To
+stay inside their memory and rate limits, the demo scan is deliberately capped:
+crawl 5 pages, AI vision on 1 page, a 3-second gap between AI calls — and
+Lighthouse is off entirely (it spawns a second Chromium the 512MB box can't
+fit, so its checks show an honest N/A instead of fake numbers).
 **These are configuration values, not engineering limits.** Run locally and
 the same pipeline audits every crawled page at full depth:
 

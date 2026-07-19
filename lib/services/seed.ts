@@ -46,6 +46,9 @@ export function seedIfEmpty(): void {
 
   logger.info({ urls }, "seed: empty database — starting real demo scans");
   void (async () => {
+    // Let the server finish booting and pass its health check before the
+    // first Chromium spawns — on 512MB instances the overlap causes OOM.
+    await sleep(30_000);
     for (const url of urls) {
       try {
         const site = ensureWebsite(url);
