@@ -52,7 +52,7 @@
     diagnosis: real crawling, 60+ automated checks, Lighthouse, axe-core, security probes, and AI-written
     fixes tied to the exact broken elements.</p>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">01 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">01 / 10</span></div>
 </div>
 
 <!-- SLIDE 2 — The real pain -->
@@ -71,7 +71,7 @@
     <p class="sub" style="margin-top:34px;"><b style="color:#E7ECF4;">The gap:</b> nothing between a $0 toy and a $1000 consultant —
     no tool that finds real problems, proves them with evidence, and hands over the exact fix.</p>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">02 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">02 / 10</span></div>
 </div>
 
 <!-- SLIDE 3 — Pain → Solution -->
@@ -101,7 +101,7 @@
         <p class="sub" style="font-size:14.5px; margin:6px 0 0;">Every failed check = exactly one issue, counts reconcile everywhere; anything that couldn't run says so in orange with a one-click re-run. Never a fake pass.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">03 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">03 / 10</span></div>
 </div>
 
 <!-- SLIDE 4 — How it works, step by step -->
@@ -125,7 +125,7 @@
     </div>
     <p class="sub" style="margin-top:26px; font-size:15px;"><span class="mono" style="color:#5EEAD4;">crawl → audit → AI → issues → fixes → verify</span> — a full quality loop, not a one-shot report.</p>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">04 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">04 / 10</span></div>
 </div>
 
 <!-- SLIDE 5 — Product -->
@@ -145,7 +145,7 @@
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">05 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">05 / 10</span></div>
 </div>
 
 <!-- SLIDE 6 — AI fluency -->
@@ -164,7 +164,7 @@
         <p class="sub" style="font-size:15px; margin:8px 0 0;">Chat answers strictly from stored analysis and refuses the rest. Provider-agnostic (Groq/Gemini/any OpenAI-compatible), zod-validated JSON, and <b>self-healing model fallback</b> when free-tier quotas run dry.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">06 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">06 / 10</span></div>
 </div>
 
 <!-- SLIDE 7 — Honesty differentiator -->
@@ -185,7 +185,7 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">07 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">07 / 10</span></div>
 </div>
 
 <!-- SLIDE 8 — Working today -->
@@ -213,10 +213,40 @@
     </div>
     <p class="sub" style="margin-top:22px; font-size:15px;"><span class="mono" style="color:#5EEAD4;">Deployed and clickable:</span> live demo self-seeds two scanned sites — judges can open reports, re-run checks, and chat with the analysis immediately.</p>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">08 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">08 / 10</span></div>
 </div>
 
-<!-- SLIDE 9 — Market + next + close -->
+<!-- SLIDE 9 — Demo limits: config, not code -->
+<div class="slide">
+  <div class="z">
+    <div class="kicker">Demo limits — config, not code</div>
+    <h2>Capped on free tiers. Uncapped in one env change.</h2>
+    <div style="margin-top:28px; display:flex; gap:24px;">
+      <div style="flex:1;">
+        <ul class="clean">
+          <li><div><b>100% free infrastructure</b> — free-tier server + Groq free AI. Demo caps exist only to respect their rate limits: vision on 2 pages, Lighthouse on 5, 3s between AI calls</div></li>
+          <li><div><b>The engine has no limits</b> — clone, <span class="mono">pnpm dev</span>, and the same pipeline audits all 10 pages at full depth: every analyzer, every AI review</div></li>
+          <li><div><b>Rate-limited ≠ hidden</b> — a throttled stage shows an honest <b>"Not run — error"</b> row with the real reason and a one-click re-run. Results are never faked</div></li>
+        </ul>
+        <p class="sub" style="font-size:15px; margin-top:18px;">We treat rate limits like failed checks: transparently. A QC tool that fakes its own results can't be trusted to QC anything.</p>
+      </div>
+      <div class="panel" style="width:360px; flex-shrink:0;">
+        <div class="mono" style="font-size:12px; color:#5EEAD4; margin-bottom:10px;"># .env — full-potential local run</div>
+        <div class="mono" style="font-size:13.5px; line-height:2; color:rgba(231,236,244,0.8);">
+          LIGHTHOUSE_MAX_PAGES=<span style="color:#5EEAD4;">10</span><br>
+          AI_MAX_VISION_PAGES=<span style="color:#5EEAD4;">10</span><br>
+          AI_MAX_HTML_PAGES=<span style="color:#5EEAD4;">10</span><br>
+          AI_MAX_FIX_ISSUES=<span style="color:#5EEAD4;">50</span><br>
+          AI_CALL_GAP_MS=<span style="color:#5EEAD4;">0</span>
+        </div>
+        <p class="sub" style="font-size:13px; margin:14px 0 0;">One file. Zero code changes. Full potential.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">09 / 10</span></div>
+</div>
+
+<!-- SLIDE 10 — Market + next + close -->
 <div class="slide">
   <div class="z">
     <div class="kicker">Market & what's next</div>
@@ -237,7 +267,7 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Website Doctor</span><span class="mono">09 / 09</span></div>
+  <div class="foot"><span>Website Doctor</span><span class="mono">10 / 10</span></div>
 </div>
 
 </body>

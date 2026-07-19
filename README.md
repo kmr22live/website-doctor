@@ -90,6 +90,28 @@ Rate-limit aware (respects `retry-after`, spaces calls), degrades gracefully —
 if the AI is down, the scan still completes and the report says exactly which
 reviews didn't run. Prompts live as files in `lib/ai/prompts/`, never hardcoded.
 
+## Demo limits (and how to unlock full power)
+
+The hosted demo runs entirely on **free tiers** (server + Groq AI). To stay
+inside their rate limits, the demo scan is deliberately capped: AI vision
+review on 2 pages, Lighthouse on 5, and a 3-second gap between AI calls.
+**These are configuration values, not engineering limits.** Run locally and
+the same pipeline audits every crawled page at full depth:
+
+```env
+# .env — full-potential local run
+LIGHTHOUSE_MAX_PAGES=10
+AI_MAX_VISION_PAGES=10
+AI_MAX_HTML_PAGES=10
+AI_MAX_FIX_ISSUES=50
+AI_CALL_GAP_MS=0
+```
+
+And in keeping with the honesty invariant: anything a rate limit prevents from
+running is **never faked** — it shows a "Not run — error" row with the real
+reason and a one-click re-run button. A QC tool that fakes its own results
+can't be trusted to QC anything.
+
 ## Architecture
 
 ```
