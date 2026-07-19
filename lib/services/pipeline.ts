@@ -12,26 +12,24 @@ import { computeScores } from "@/lib/services/scoring";
 import { appendLog, bumpStats, finishJob, markJobRunning, markStageFailed, setStage } from "@/lib/services/jobs";
 import { runAnalyzers } from "@/lib/analyzers";
 import { runAiStages, runFixGenerator } from "@/lib/ai/stages";
+import { enqueueScan } from "@/lib/services/scan-queue";
 import type { ExtractedPage } from "@/lib/types/extracted";
 
-// In-process run registry so a job can't run twice.
-const globalForRuns = globalThis as unknown as { __wdRunning?: Set<string> };
-function runningSet(): Set<string> {
-  if (!globalForRuns.__wdRunning) globalForRuns.__wdRunning = new Set();
-  return globalForRuns.__wdRunning;
-}
-
 export function startAnalysis(jobId: string, websiteId: string, url: string): void {
-  if (runningSet().has(jobId)) return;
-  runningSet().add(jobId);
-  // Fire and forget — the heavy pipeline runs in this Node process, not edge.
-  void runAnalysis(jobId, websiteId, url)
-    .catch((e: unknown) => {
+  // Global gate: at most config.limits.maxConcurrentScans heavy pipelines run
+  // at once (1 on the 512MB free tier — two Playwright/axe pipelines together
+  // OOM the box). Extra scans queue in FIFO order instead of crashing the
+  // process. The gate also dedupes by jobId, so a job can never run twice.
+  const { started, ahead } = enqueueScan(jobId, () =>
+    runAnalysis(jobId, websiteId, url).catch((e: unknown) => {
       logger.error({ jobId, err: String(e) }, "pipeline crashed");
       appendLog(jobId, `pipeline crashed: ${String(e).slice(0, 300)}`, "error");
       finishJob(jobId, "failed", String(e).slice(0, 500));
-    })
-    .finally(() => runningSet().delete(jobId));
+    }),
+  );
+  if (!started) {
+    appendLog(jobId, `queued — this instance runs one scan at a time (${ahead} ahead); waiting for a free slot`);
+  }
 }
 
 export type PersistedPage = {

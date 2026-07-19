@@ -5,6 +5,5 @@ node_modules/
 *.db
 *.db-journal
 data/
-artifacts/
 .DS_Store
 tsconfig.tsbuildinfo

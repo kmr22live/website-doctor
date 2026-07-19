@@ -73,6 +73,9 @@ export const config = {
     maxLogLines: 500,
     maxIssueTitleLength: 200,
     maxChatContextIssues: 50,
+    /** Heavy scan pipelines allowed to run at once. 1 on the 512MB free tier —
+     *  two Playwright/axe pipelines together OOM the box; bump on a bigger box. */
+    maxConcurrentScans: Number(process.env.MAX_CONCURRENT_SCANS ?? 1),
   },
 } as const;
 
