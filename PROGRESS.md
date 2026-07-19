@@ -64,6 +64,11 @@ fix any failure, mark `[x]`, add discovered subtasks, and commit. When ALL items
 - [x] Issue drawer shows an "Affected elements" section with per-element selector + code block + copy-all; AI fix generator receives the snippets so fixes target the real elements.
 - [x] Old scans have no snippets (section hides); appears on new scans and targeted re-runs. Verified live: axe re-run on namastedev.com → 35 issues with real element HTML.
 
+## Deploy hardening — live-demo bugs found + fixed (2026-07-19)
+- [x] **OOM crash-loop root cause = no GLOBAL scan gate.** `startAnalysis` was fire-and-forget with only a per-jobId guard, so a second scan (visitor + boot seed, or two visitors) ran a second Playwright/axe pipeline concurrently and OOM-killed the whole Node process on the 512MB dyno → every endpoint 502'd → Render restart → ephemeral DB wiped → reseed. Fix: `lib/services/scan-queue.ts` — process-wide gate, at most `config.limits.maxConcurrentScans` pipelines at once (default 1, env `MAX_CONCURRENT_SCANS`), rest queue FIFO + log "queued — waiting for a free slot". Gate also dedupes by jobId (replaced old runningSet). Tests: `tests/scan-queue.test.ts` (FIFO, single-slot, dedupe, ahead-count). validate.sh green (36 tests + live smoke).
+- [x] **Screenshot API route was never deployed.** `.gitignore` pattern `artifacts/` matched `app/api/artifacts/` as well as `data/artifacts/`, so `app/api/artifacts/screenshot/route.ts` was untracked in BOTH repos and missing from the deployed (public) build → live screenshots 404'd. Local build/smoke never caught it (file present on disk). Fix: dropped redundant `artifacts/` (kept `data/`), tracked the route. Verified: live route flips 404→400 on no-param after redeploy.
+- [ ] USER-SIDE still open: (1) Render dashboard `SEED_URLS` is still the code default (seeds example.com + namastedev.com — namastedev is a heavy SPA); set it to `https://example.com` only to match render.yaml. (2) warm ping cron-job.org GET /api/sites every 10 min.
+
 ## Notes / assumptions (append as you go)
 - Project lives at C:/Users/Arjun/website-doctor (copied from handoff; Downloads path had space+parens).
 - Stack pinned: Next 16.2.10, React 19.2.4, Tailwind v4 (CSS-first @theme tokens), shadcn v4 (base-ui, style base-nova), Drizzle + better-sqlite3, zod v4.

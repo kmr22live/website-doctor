@@ -65,7 +65,7 @@ Paste any URL on the home page. A 10-page scan with AI takes ~3-5 minutes; the
 Analyzing view streams live progress. Quality gate:
 
 ```bash
-bash scripts/validate.sh   # typecheck + lint + build + 28 unit tests + LIVE smoke scan
+bash scripts/validate.sh   # typecheck + lint + build + 36 unit tests + LIVE smoke scan
 ```
 
 The smoke test is the real-integration proof: it boots the app, scans a live
@@ -130,7 +130,7 @@ data/                   SQLite (Drizzle ORM) + crawl artifacts per job
 ```
 
 - **TypeScript strict, no `any`** · pino structured logging · per-analyzer error
-  isolation · 28 unit tests wired into the validate gate.
+  isolation · 36 unit tests wired into the validate gate.
 - 393 checks registered (62 fully implemented and running; the full 331-check
   industry catalog is registered honestly as N/A until implemented — never
   displayed as passing).
