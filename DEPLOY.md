@@ -13,10 +13,10 @@ The scanner runs Playwright + Lighthouse, which **do not work on serverless**
 6. Your public URL appears as `https://website-doctor-XXXX.onrender.com`.
 
 **No manual scan needed:** on every fresh deploy the instance seeds itself —
-it runs REAL scans of the `SEED_URLS` demo sites (default: example.com +
-namastedev.com) as soon as it boots, so judges always land on filled
-dashboards, even after the ephemeral disk is wiped. Set `SEED_URLS=` (empty)
-to disable, or point it at different sites.
+it runs a REAL scan of the `SEED_URLS` demo site (default: example.com) as
+soon as it boots, so judges always land on a filled dashboard, even after the
+ephemeral disk is wiped. Set `SEED_URLS=` (empty) to disable, or point it at
+different sites (one light site is best on the 512 MB free tier).
 
 ### Free-plan notes
 - 512 MB RAM is tight for Lighthouse. `LIGHTHOUSE_MAX_PAGES=3` is preset; if scans

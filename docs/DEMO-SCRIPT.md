@@ -3,7 +3,7 @@
 **Target: 2:50 runtime.** Record screen at 1920×1080, app at http://localhost:3000
 (or the deployed URL — better for judges). Speak naturally; lines below are ~140
 words/min pace. **Prep before recording:** one finished scan of a real site
-(namastedev.com works — rich findings), AI provider live, server warm.
+(any content-rich public site gives the best findings), AI provider live, server warm.
 
 ---
 

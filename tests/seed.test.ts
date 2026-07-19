@@ -2,8 +2,8 @@ import { describe, expect, it } from "vitest";
 import { parseSeedUrls } from "@/lib/services/seed";
 
 describe("boot seeding (real self-scans on empty DB)", () => {
-  it("defaults to the two demo sites when SEED_URLS is unset", () => {
-    expect(parseSeedUrls(undefined)).toEqual(["https://example.com", "https://namastedev.com"]);
+  it("defaults to the single light demo site when SEED_URLS is unset", () => {
+    expect(parseSeedUrls(undefined)).toEqual(["https://example.com"]);
   });
 
   it("empty string disables seeding", () => {

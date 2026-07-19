@@ -3,7 +3,7 @@ import { ensureWebsite, createJob, getJob } from "@/lib/services/jobs";
 import { startAnalysis } from "@/lib/services/pipeline";
 import { logger } from "@/lib/logger";
 
-const DEFAULT_SEED_URLS = "https://example.com,https://namastedev.com";
+const DEFAULT_SEED_URLS = "https://example.com";
 const POLL_MS = 10_000;
 const MAX_WAIT_MS = 15 * 60_000;
 
