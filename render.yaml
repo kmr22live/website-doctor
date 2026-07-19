@@ -22,8 +22,13 @@ services:
       - key: AI_CALL_GAP_MS
         value: "3000"
       - key: MAX_PAGES
-        value: "10"
+        value: "6"
+      # Lighthouse runs a SECOND Chromium — too heavy for the free 512MB
+      # instance. Off by default there; its checks show honest N/A. Bump the
+      # instance (or set >0) to enable.
       - key: LIGHTHOUSE_MAX_PAGES
-        value: "3"
+        value: "0"
+      - key: AI_MAX_VISION_PAGES
+        value: "1"
       - key: SEED_URLS
         value: https://example.com,https://namastedev.com

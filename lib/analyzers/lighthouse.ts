@@ -50,7 +50,7 @@ export async function runLighthouse(ctx: AnalyzerContext): Promise<EvaluatedChec
   try {
     browser = await chromium.launch({
       headless: true,
-      args: [`--remote-debugging-port=${port}`],
+      args: [`--remote-debugging-port=${port}`, "--disable-dev-shm-usage", "--disable-gpu", "--no-sandbox"],
     });
     const { default: lighthouse } = await import("lighthouse");
 

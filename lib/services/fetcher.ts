@@ -21,7 +21,11 @@ const globalForBrowser = globalThis as unknown as { __wdBrowser?: Browser };
 
 export async function getBrowser(): Promise<Browser> {
   if (globalForBrowser.__wdBrowser?.isConnected()) return globalForBrowser.__wdBrowser;
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({
+    headless: true,
+    // Container-friendly: small /dev/shm and tight RAM on free-tier hosts.
+    args: ["--disable-dev-shm-usage", "--disable-gpu", "--no-sandbox", "--disable-extensions"],
+  });
   globalForBrowser.__wdBrowser = browser;
   return browser;
 }
